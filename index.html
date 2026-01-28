@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Renhacer: Educación y Consciencia</title>
   <meta name="description" content="Renhacer: Educación y Consciencia. Elige Renhacer Educativo o Renhacer Consciente." />
+  
+  <!-- Precargar recursos críticos -->
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="preload" href="assets/images/rec-logo.svg" as="image" />
+  <link rel="preload" href="assets/images/re-portada.svg" as="image" />
+  <link rel="preload" href="assets/images/rc-portada.svg" as="image" />
+  
   <link rel="stylesheet" href="assets/css/styles.css" />
+  
+  <!-- Prevenir FOUC (Flash of Unstyled Content) -->
+  <style>
+    body { opacity: 0; transition: opacity 0.3s ease-in; }
+    body.loaded { opacity: 1; }
+  </style>
 </head>
 
 <body class="home-canva">
@@ -78,6 +91,13 @@
   </section>
 
 </main>
+
+<script>
+  // Mostrar la página cuando todo esté cargado
+  window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+  });
+</script>
 
 </body>
 </html>
