@@ -148,3 +148,140 @@ body.home-canva{
   display:block;
   text-decoration:none;
 }
+
+/* =========================================================
+   RESPONSIVE: MÓVILES Y TABLETS
+   ========================================================= */
+
+/* Tablets grandes (≤1200px) */
+@media(max-width:1200px){
+  .layout{
+    grid-template-columns:1fr 1fr;
+    padding:40px 50px;
+    gap:50px;
+  }
+  
+  .left h1{font-size:38px;}
+  .texto{font-size:17px;}
+  .logo-grande{width:360px;}
+  
+  .right{gap:50px;}
+  .card-area{width:100%;max-width:320px;}
+  .portada{height:380px;}
+}
+
+/* Tablets medianas (≤992px) */
+@media(max-width:992px){
+  .layout{
+    grid-template-columns:1fr;
+    height:auto;
+    padding:40px 30px;
+    gap:60px;
+  }
+  
+  .left{
+    text-align:center;
+    align-items:center;
+  }
+  
+  .left h1{font-size:36px;}
+  .texto{
+    max-width:600px;
+    font-size:16px;
+    text-align:center;
+  }
+  .logo-grande{width:300px;}
+  
+  .right{
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    justify-items:center;
+  }
+  
+  .card-area{width:100%;max-width:100%;}
+  .portada{height:320px;}
+}
+
+/* Móviles (≤768px) */
+@media(max-width:768px){
+  .layout{
+    padding:30px 20px;
+    gap:40px;
+  }
+  
+  .left h1{
+    font-size:28px;
+    letter-spacing:2px;
+  }
+  
+  .texto{
+    font-size:15px;
+    line-height:1.7;
+    max-width:100%;
+  }
+  
+  .logo-grande{
+    width:220px;
+    margin-top:20px;
+  }
+  
+  .right{
+    grid-template-columns:1fr;
+    gap:50px;
+    max-width:500px;
+    margin:0 auto;
+  }
+  
+  .card-area{
+    width:100%;
+    max-width:100%;
+  }
+  
+  .portada{
+    height:280px;
+    border-radius:20px;
+  }
+  
+  .card-area h2{font-size:22px;}
+  .intro-area{
+    font-size:15px;
+    max-width:100%;
+    padding:0 10px;
+  }
+  
+  .card-area ul{
+    max-width:100%;
+    font-size:14px;
+    padding-left:20px;
+  }
+  
+  .logo-area{height:90px;}
+  .logo-educativo{height:110px;}
+  .logo-consciente{height:90px;}
+}
+
+/* Móviles pequeños (≤480px) */
+@media(max-width:480px){
+  .layout{padding:20px 15px;}
+  
+  .left h1{
+    font-size:24px;
+    letter-spacing:1.5px;
+  }
+  
+  .texto{
+    font-size:14px;
+    line-height:1.6;
+  }
+  
+  .logo-grande{width:180px;}
+  
+  .portada{height:240px;}
+  
+  .card-area h2{font-size:20px;}
+  .intro-area{font-size:14px;}
+  .card-area ul{font-size:13px;}
+  
+  .logo-area{height:80px;}
+  .logo-educativo{height:95px;}
+}
