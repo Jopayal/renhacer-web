@@ -1,0 +1,150 @@
+/* =========================================================
+   RENHACER - HOME (ESTILO CANVA)
+   ========================================================= */
+
+body.home-canva{
+  margin:0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  background:#ffffff;
+  color:#2b2b2b;
+}
+
+/* Contenedor principal: 2 columnas como Canva */
+.layout{
+  display:grid;
+  grid-template-columns: 1.05fr 1fr;
+  height:100vh;
+  align-items:center;
+  padding:44px 84px;
+  gap:78px;
+}
+
+/* ---------------------------
+   IZQUIERDA
+---------------------------- */
+.left{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:22px;
+}
+
+/* ✅ Logo superior: NO VA -> lo ocultamos */
+.logo-principal{
+  display:none;
+}
+
+.left h1{
+  margin:0;
+  color:#a856ff;
+  font-weight:900;
+  font-size:44px;
+  letter-spacing:3px;
+  line-height:1.05;
+}
+
+/* ✅ Texto “presentación” justificado real */
+.texto{
+  max-width:560px;          /* clave: ancho fijo para que el justify se note */
+  font-size:18px;
+  line-height:1.85;
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+
+/* ✅ Logo grande (abajo izquierda) tamaño Canva */
+.logo-grande{
+  width:420px;              /* ajusta el tamaño del gran sello */
+  max-width:100%;
+  margin-top:8px;
+}
+
+/* ---------------------------
+   DERECHA (2 columnas)
+---------------------------- */
+.right{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:78px;
+  align-items:start;
+}
+
+/* Cada bloque Educativo/Consciente */
+.card-area{
+  width:360px;
+  max-width:360px;
+  text-align:center;        /* ✅ centra título y sello bajo imagen */
+}
+
+/* Imagenes de portada */
+.portada{
+  width:100%;
+  height:420px;             /* ✅ altura fija igual para ambas */
+  object-fit:cover;
+  border-radius:28px;
+  display:block;
+}
+
+/* Titulos bajo portada: centrados */
+.card-area h2{
+  margin:14px 0 10px;
+  font-size:24px;
+  font-weight:800;
+  color:#0b5cff;
+  text-align:center;
+}
+
+/* Textos intro bajo cada portada */
+.intro-area{
+  margin:0 auto 10px;
+  max-width:340px;
+  font-size:16px;
+  line-height:1.6;
+  color:#2b2b2b;
+  text-align:left; /* Canva: el bloque se ve alineado a la izquierda */
+}
+
+/* Listas: alineadas a la izquierda pero dentro de un bloque centrado */
+.card-area ul{
+  margin:0 auto;
+  max-width:340px;
+  padding-left:18px;
+  color:#0b5cff;
+  font-size:15px;
+  line-height:1.7;
+  text-align:left;
+}
+
+/* ✅ Sellos del final: MISMA ALTURA para que no se vean distintos */
+.logo-area{
+  height:105px;
+  width:auto;
+  margin-top:15px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ✅ Logo Educativo: más grande para igualar Consciente */
+.logo-educativo{
+  height:125px;
+  margin-top:8px;
+}
+
+/* ✅ Logo Consciente: altura base + margen ajustado */
+.logo-consciente{
+  height:105px;
+  margin-top:15px;
+}
+
+/* ✅ Textos bajo sellos: los ocultamos (no van en Canva) */
+.logo-text{
+  display:none !important;
+}
+
+/* Link invisible que hace clic en toda la columna */
+.click-area{
+  display:block;
+  text-decoration:none;
+}

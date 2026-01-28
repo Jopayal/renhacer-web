@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Consciente - Renhacer</title>
+  <link rel="stylesheet" href="assets/css/consciente.css" />
+  <link rel="stylesheet" href="assets/css/tienda.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container-header">
+    <a href="consciente.html" class="logo-link">
+      <img src="assets/images/rc-logo.svg" alt="Renhacer Consciente" class="logo-header">
+    </a>
+    <nav class="nav">
+      <a href="consciente.html">← Volver</a>
+      <a href="consciente.html#terapias">Terapias</a>
+      <a href="reservas-consciente.html">Reservar</a>
+      <a href="index.html">Inicio</a>
+    </nav>
+    <button class="cart-toggle" id="cartToggle">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- CARRITO LATERAL -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>🛒 Mi Carrito</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Tu carrito está vacío</p>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <strong id="cartTotal">$0</strong>
+    </div>
+    <button class="btn-checkout">Proceder al Pago</button>
+    <button class="btn-continue-shopping" id="continueShopping">Seguir Comprando</button>
+  </div>
+</div>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- MAIN -->
+<main class="tienda-main">
+  <div class="container">
+    
+    <div class="tienda-header">
+      <h1>Tienda Consciente</h1>
+      <p>Recursos digitales y productos para tu bienestar y transformación personal</p>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="filtros-section">
+      <button class="filtro-btn active" data-filter="todos">Todos</button>
+      <button class="filtro-btn" data-filter="digital">Digitales</button>
+      <button class="filtro-btn" data-filter="fisico">Físicos</button>
+      <button class="filtro-btn" data-filter="cursos">Cursos</button>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="productos-tienda">
+      
+      <!-- E-Book Sanación Interior -->
+      <div class="producto-tienda" data-tipo="digital">
+        <div class="producto-img">
+          <div class="img-placeholder">📖</div>
+          <span class="tipo-badge digital">DIGITAL</span>
+        </div>
+        <div class="producto-info">
+          <h3>E-Book: Sanación Interior</h3>
+          <p class="producto-desc">Guía completa de 120 páginas con ejercicios prácticos para tu proceso de sanación emocional.</p>
+          <div class="producto-detalles">
+            <span>📄 120 páginas</span>
+            <span>📥 Descarga inmediata</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$15.000</div>
+            <button class="btn-add-cart" data-id="1" data-name="E-Book: Sanación Interior" data-price="15000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meditaciones Guiadas -->
+      <div class="producto-tienda" data-tipo="digital">
+        <div class="producto-img">
+          <div class="img-placeholder">🎧</div>
+          <span class="tipo-badge digital">DIGITAL</span>
+          <span class="badge-popular">Más vendido</span>
+        </div>
+        <div class="producto-info">
+          <h3>Meditaciones Guiadas (Pack 10)</h3>
+          <p class="producto-desc">10 meditaciones en audio HD para relajación, sanación, abundancia y conexión espiritual.</p>
+          <div class="producto-detalles">
+            <span>🎵 10 audios MP3</span>
+            <span>⏱️ 15-30 min c/u</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$25.000</div>
+            <button class="btn-add-cart" data-id="2" data-name="Meditaciones Guiadas (Pack 10)" data-price="25000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diario de Consciencia -->
+      <div class="producto-tienda" data-tipo="digital">
+        <div class="producto-img">
+          <div class="img-placeholder">📝</div>
+          <span class="tipo-badge digital">DIGITAL</span>
+        </div>
+        <div class="producto-info">
+          <h3>Diario de Consciencia</h3>
+          <p class="producto-desc">Diario digital interactivo PDF para registro diario de emociones, gratitud y reflexiones.</p>
+          <div class="producto-detalles">
+            <span>📋 PDF interactivo</span>
+            <span>🖊️ 365 páginas</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$12.000</div>
+            <button class="btn-add-cart" data-id="3" data-name="Diario de Consciencia" data-price="12000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kit Cristales -->
+      <div class="producto-tienda" data-tipo="fisico">
+        <div class="producto-img">
+          <div class="img-placeholder">💎</div>
+          <span class="tipo-badge fisico">FÍSICO</span>
+        </div>
+        <div class="producto-info">
+          <h3>Kit de Cristales Sanadores</h3>
+          <p class="producto-desc">Set de 7 cristales seleccionados para equilibrio de chakras. Incluye guía de uso y bolsa de tela.</p>
+          <div class="producto-detalles">
+            <span>💎 7 cristales</span>
+            <span>📦 Envío incluido</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$35.000</div>
+            <button class="btn-add-cart" data-id="4" data-name="Kit de Cristales Sanadores" data-price="35000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curso Reiki Online -->
+      <div class="producto-tienda" data-tipo="cursos">
+        <div class="producto-img">
+          <div class="img-placeholder">🧘</div>
+          <span class="tipo-badge cursos">CURSO</span>
+        </div>
+        <div class="producto-info">
+          <h3>Curso Online: Reiki Nivel I</h3>
+          <p class="producto-desc">Aprende la técnica de sanación energética Reiki Usui. 8 semanas con certificación incluida.</p>
+          <div class="producto-detalles">
+            <span>📅 8 semanas</span>
+            <span>🎓 Certificado</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$180.000</div>
+            <button class="btn-add-cart" data-id="5" data-name="Curso Online: Reiki Nivel I" data-price="180000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Más productos... -->
+      <div class="producto-tienda" data-tipo="digital">
+        <div class="producto-img">
+          <div class="img-placeholder">🌟</div>
+          <span class="tipo-badge digital">DIGITAL</span>
+        </div>
+        <div class="producto-info">
+          <h3>Masterclass: Gestión Emocional</h3>
+          <p class="producto-desc">Video curso de 4 horas sobre inteligencia emocional y herramientas de regulación.</p>
+          <div class="producto-detalles">
+            <span>🎥 4 horas</span>
+            <span>📚 Material descargable</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$45.000</div>
+            <button class="btn-add-cart" data-id="6" data-name="Masterclass: Gestión Emocional" data-price="45000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-tienda" data-tipo="fisico">
+        <div class="producto-img">
+          <div class="img-placeholder">🕯️</div>
+          <span class="tipo-badge fisico">FÍSICO</span>
+        </div>
+        <div class="producto-info">
+          <h3>Set de Velas Aromáticas</h3>
+          <p class="producto-desc">6 velas artesanales con aceites esenciales para meditación y aromaterapia.</p>
+          <div class="producto-detalles">
+            <span>🕯️ 6 velas</span>
+            <span>🌿 100% naturales</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$28.000</div>
+            <button class="btn-add-cart" data-id="7" data-name="Set de Velas Aromáticas" data-price="28000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-tienda" data-tipo="digital">
+        <div class="producto-img">
+          <div class="img-placeholder">🧠</div>
+          <span class="tipo-badge digital">DIGITAL</span>
+        </div>
+        <div class="producto-info">
+          <h3>E-Book: Mindfulness Práctico</h3>
+          <p class="producto-desc">80 páginas con técnicas de mindfulness para aplicar en tu vida diaria.</p>
+          <div class="producto-detalles">
+            <span>📄 80 páginas</span>
+            <span>🎯 Ejercicios prácticos</span>
+          </div>
+          <div class="producto-footer">
+            <div class="precio">$18.000</div>
+            <button class="btn-add-cart" data-id="8" data-name="E-Book: Mindfulness Práctico" data-price="18000">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer-simple">
+  <div class="container">
+    <p>&copy; 2024 Renhacer Consciente | <a href="consciente.html">Volver al inicio</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/tienda.js"></script>
+</body>
+</html>

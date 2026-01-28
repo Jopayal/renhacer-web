@@ -1,0 +1,200 @@
+.reservas-main {
+  padding: 140px 0 80px;
+  background: linear-gradient(180deg, #f0e6ff 0%, #fff 50%);
+  min-height: 100vh;
+}
+
+.reservas-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.reservas-header h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+.reservas-header p {
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+.reservas-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.reservas-calendar {
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.reservas-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.info-box h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--text);
+}
+
+.info-box p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.terapias-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.terapias-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.terapias-list li:last-child {
+  border-bottom: none;
+}
+
+.terapias-list strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.link-terapias {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link-terapias:hover {
+  color: var(--primary-dark);
+}
+
+.checklist {
+  list-style: none;
+}
+
+.checklist li {
+  padding: 8px 0;
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.modalidades .modalidad-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.modalidades .modalidad-item:last-child {
+  border-bottom: none;
+}
+
+.modalidad-item .icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.modalidad-item strong {
+  display: block;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.modalidad-item p {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.payment-badge {
+  background: var(--bg-light);
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.info-box.urgente {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+}
+
+.info-box.urgente h3,
+.info-box.urgente p {
+  color: white;
+}
+
+.btn-whatsapp-big {
+  display: block;
+  background: white;
+  color: var(--primary);
+  padding: 14px 30px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: transform 0.3s;
+}
+
+.btn-whatsapp-big:hover {
+  transform: scale(1.05);
+}
+
+.footer-simple {
+  background: #1a1a1a;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-simple p {
+  color: #888;
+}
+
+.footer-simple a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer-simple a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .reservas-layout {
+    grid-template-columns: 1fr;
+  }
+}
