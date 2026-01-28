@@ -1,22 +1,24 @@
 /* =========================================================
-   RENHACER - HOME (ESTILO CANVA)
+   RENHACER - HOME (DISEÑO PROFESIONAL OPTIMIZADO)
    ========================================================= */
 
 body.home-canva{
   margin:0;
   font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
-  background:#ffffff;
+  background:#fafafa;
   color:#2b2b2b;
 }
 
-/* Contenedor principal: 2 columnas como Canva */
+/* Contenedor principal: 2 columnas */
 .layout{
   display:grid;
-  grid-template-columns: 1.05fr 1fr;
-  height:100vh;
+  grid-template-columns: 1fr 1fr;
+  min-height:100vh;
   align-items:center;
-  padding:44px 84px;
-  gap:78px;
+  padding:60px 80px;
+  gap:80px;
+  max-width:1600px;
+  margin:0 auto;
 }
 
 /* ---------------------------
@@ -26,10 +28,10 @@ body.home-canva{
   display:flex;
   flex-direction:column;
   justify-content:center;
-  gap:22px;
+  gap:24px;
+  padding-right:20px;
 }
 
-/* ✅ Logo superior: NO VA -> lo ocultamos */
 .logo-principal{
   display:none;
 }
@@ -38,26 +40,27 @@ body.home-canva{
   margin:0;
   color:#a856ff;
   font-weight:900;
-  font-size:44px;
-  letter-spacing:3px;
-  line-height:1.05;
+  font-size:42px;
+  letter-spacing:2.5px;
+  line-height:1.1;
 }
 
-/* ✅ Texto “presentación” justificado real */
 .texto{
-  max-width:560px;          /* clave: ancho fijo para que el justify se note */
-  font-size:18px;
-  line-height:1.85;
+  max-width:540px;
+  font-size:17px;
+  line-height:1.75;
   text-align:justify;
   text-justify:inter-word;
   hyphens:auto;
+  color:#4a4a4a;
 }
 
-/* ✅ Logo grande (abajo izquierda) tamaño Canva */
+/* Logo grande optimizado - 40% más pequeño */
 .logo-grande{
-  width:420px;              /* ajusta el tamaño del gran sello */
+  width:280px;
   max-width:100%;
-  margin-top:8px;
+  margin-top:20px;
+  filter:drop-shadow(0 4px 8px rgba(168,86,255,0.15));
 }
 
 /* ---------------------------
@@ -66,87 +69,213 @@ body.home-canva{
 .right{
   display:grid;
   grid-template-columns: 1fr 1fr;
-  gap:78px;
+  gap:50px;
   align-items:start;
 }
 
-/* Cada bloque Educativo/Consciente */
+/* ---------------------------
+   TARJETAS OPTIMIZADAS
+---------------------------- */
 .card-area{
-  width:360px;
-  max-width:360px;
-  text-align:center;        /* ✅ centra título y sello bajo imagen */
+  background:#ffffff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  transition:all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position:relative;
 }
 
-/* Imagenes de portada */
+.card-area:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 40px rgba(0,0,0,0.15);
+}
+
+/* Wrapper de imagen con overlay */
+.card-image-wrapper{
+  position:relative;
+  overflow:hidden;
+  height:280px;
+}
+
 .portada{
   width:100%;
-  height:420px;             /* ✅ altura fija igual para ambas */
+  height:100%;
   object-fit:cover;
-  border-radius:28px;
-  display:block;
+  transition:transform 0.6s ease;
 }
 
-/* Titulos bajo portada: centrados */
+.card-area:hover .portada{
+  transform:scale(1.08);
+}
+
+/* Overlay al hacer hover */
+.card-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:linear-gradient(135deg, rgba(168,86,255,0.85) 0%, rgba(11,92,255,0.85) 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transition:opacity 0.4s ease;
+}
+
+.card-area:hover .card-overlay{
+  opacity:1;
+}
+
+.overlay-text{
+  color:#ffffff;
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1px;
+  transform:translateY(20px);
+  transition:transform 0.4s ease;
+}
+
+.card-area:hover .overlay-text{
+  transform:translateY(0);
+}
+
+/* Contenido de la tarjeta */
+.card-content{
+  padding:28px 24px 32px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
 .card-area h2{
-  margin:14px 0 10px;
+  margin:0;
   font-size:24px;
   font-weight:800;
   color:#0b5cff;
   text-align:center;
 }
 
-/* Textos intro bajo cada portada */
 .intro-area{
-  margin:0 auto 10px;
-  max-width:340px;
-  font-size:16px;
-  line-height:1.6;
-  color:#2b2b2b;
-  text-align:left; /* Canva: el bloque se ve alineado a la izquierda */
-}
-
-/* Listas: alineadas a la izquierda pero dentro de un bloque centrado */
-.card-area ul{
-  margin:0 auto;
-  max-width:340px;
-  padding-left:18px;
-  color:#0b5cff;
+  margin:0;
   font-size:15px;
-  line-height:1.7;
-  text-align:left;
+  line-height:1.6;
+  color:#5a5a5a;
+  text-align:center;
+  padding:0 8px;
 }
 
-/* ✅ Sellos del final: MISMA ALTURA para que no se vean distintos */
-.logo-area{
-  height:105px;
-  width:auto;
-  margin-top:15px;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+/* Lista de características optimizada */
+.card-features{
+  margin:8px 0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 
-/* ✅ Logo Educativo: más grande para igualar Consciente */
-.logo-educativo{
-  height:125px;
-  margin-top:8px;
+.card-features li{
+  font-size:14px;
+  color:#2b2b2b;
+  padding-left:0;
+  display:flex;
+  align-items:center;
+  line-height:1.5;
 }
 
-/* ✅ Logo Consciente: altura base + margen ajustado */
-.logo-consciente{
-  height:105px;
-  margin-top:15px;
+.card-features li::before{
+  content:'✓';
+  margin-right:10px;
+  color:#10b981;
+  font-weight:bold;
+  font-size:16px;
+  flex-shrink:0;
 }
 
-/* ✅ Textos bajo sellos: los ocultamos (no van en Canva) */
-.logo-text{
-  display:none !important;
-}
-
-/* Link invisible que hace clic en toda la columna */
-.click-area{
-  display:block;
+/* Botones CTA profesionales */
+.btn-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:14px 28px;
+  border-radius:12px;
+  font-size:15px;
+  font-weight:700;
   text-decoration:none;
+  transition:all 0.3s ease;
+  margin:8px auto 4px;
+  position:relative;
+  overflow:hidden;
+}
+
+.btn-cta::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition:left 0.5s ease;
+}
+
+.btn-cta:hover::before{
+  left:100%;
+}
+
+.btn-educativo{
+  background:linear-gradient(135deg, #0b5cff 0%, #0847c7 100%);
+  color:#ffffff;
+  box-shadow:0 4px 15px rgba(11,92,255,0.3);
+}
+
+.btn-educativo:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 25px rgba(11,92,255,0.4);
+}
+
+.btn-consciente{
+  background:linear-gradient(135deg, #a856ff 0%, #8b3dd9 100%);
+  color:#ffffff;
+  box-shadow:0 4px 15px rgba(168,86,255,0.3);
+}
+
+.btn-consciente:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 25px rgba(168,86,255,0.4);
+}
+
+.btn-arrow{
+  font-size:18px;
+  transition:transform 0.3s ease;
+}
+
+.btn-cta:hover .btn-arrow{
+  transform:translateX(4px);
+}
+
+/* Logos de sello */
+.logo-area{
+  height:90px;
+  width:auto;
+  margin:12px auto 0;
+  display:block;
+  opacity:0.85;
+  transition:opacity 0.3s ease;
+}
+
+.card-area:hover .logo-area{
+  opacity:1;
+}
+
+.logo-educativo{
+  height:100px;
+}
+
+.logo-consciente{
+  height:90px;
 }
 
 /* =========================================================
@@ -157,17 +286,16 @@ body.home-canva{
 @media(max-width:1200px){
   .layout{
     grid-template-columns:1fr 1fr;
-    padding:40px 50px;
-    gap:50px;
+    padding:50px 40px;
+    gap:60px;
   }
   
   .left h1{font-size:38px;}
-  .texto{font-size:17px;}
-  .logo-grande{width:360px;}
+  .texto{font-size:16px;}
+  .logo-grande{width:240px;}
   
-  .right{gap:50px;}
-  .card-area{width:100%;max-width:320px;}
-  .portada{height:380px;}
+  .right{gap:40px;}
+  .card-image-wrapper{height:250px;}
 }
 
 /* Tablets medianas (≤992px) */
@@ -182,6 +310,7 @@ body.home-canva{
   .left{
     text-align:center;
     align-items:center;
+    padding-right:0;
   }
   
   .left h1{font-size:36px;}
@@ -190,16 +319,17 @@ body.home-canva{
     font-size:16px;
     text-align:center;
   }
-  .logo-grande{width:300px;}
+  .logo-grande{width:220px;}
   
   .right{
     grid-template-columns:1fr 1fr;
     gap:40px;
-    justify-items:center;
+    max-width:800px;
+    margin:0 auto;
   }
   
-  .card-area{width:100%;max-width:100%;}
-  .portada{height:320px;}
+  .card-image-wrapper{height:220px;}
+  .card-content{padding:24px 20px 28px;}
 }
 
 /* Móviles (≤768px) */
@@ -221,43 +351,33 @@ body.home-canva{
   }
   
   .logo-grande{
-    width:220px;
+    width:200px;
     margin-top:20px;
   }
   
   .right{
     grid-template-columns:1fr;
-    gap:50px;
+    gap:40px;
     max-width:500px;
-    margin:0 auto;
   }
   
   .card-area{
-    width:100%;
-    max-width:100%;
-  }
-  
-  .portada{
-    height:280px;
     border-radius:20px;
   }
   
+  .card-image-wrapper{height:260px;}
+  
   .card-area h2{font-size:22px;}
-  .intro-area{
-    font-size:15px;
-    max-width:100%;
-    padding:0 10px;
-  }
+  .intro-area{font-size:14px;}
+  .card-features li{font-size:13px;}
   
-  .card-area ul{
-    max-width:100%;
+  .btn-cta{
+    padding:12px 24px;
     font-size:14px;
-    padding-left:20px;
   }
   
-  .logo-area{height:90px;}
-  .logo-educativo{height:110px;}
-  .logo-consciente{height:90px;}
+  .logo-area{height:80px;}
+  .logo-educativo{height:90px;}
 }
 
 /* Móviles pequeños (≤480px) */
@@ -274,14 +394,21 @@ body.home-canva{
     line-height:1.6;
   }
   
-  .logo-grande{width:180px;}
+  .logo-grande{width:170px;}
   
-  .portada{height:240px;}
+  .card-image-wrapper{height:220px;}
+  .card-content{padding:20px 16px 24px;}
   
   .card-area h2{font-size:20px;}
-  .intro-area{font-size:14px;}
-  .card-area ul{font-size:13px;}
+  .intro-area{font-size:13px;}
+  .card-features{gap:8px;}
+  .card-features li{font-size:12px;}
   
-  .logo-area{height:80px;}
-  .logo-educativo{height:95px;}
+  .btn-cta{
+    padding:11px 20px;
+    font-size:13px;
+  }
+  
+  .logo-area{height:70px;}
+  .logo-educativo{height:80px;}
 }
