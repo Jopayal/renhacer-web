@@ -16,8 +16,8 @@ body.home-canva{
   min-height:100vh;
   align-items:center;
   padding:60px 80px;
-  gap:80px;
-  max-width:1600px;
+  gap:50px;
+  max-width:1500px;
   margin:0 auto;
 }
 
@@ -28,8 +28,10 @@ body.home-canva{
   display:flex;
   flex-direction:column;
   justify-content:center;
+  align-items:center;
   gap:24px;
   padding-right:20px;
+  text-align:center;
 }
 
 .logo-principal{
