@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Renhacer Educativo - ATE | Convivencia Escolar</title>
   <meta name="description" content="Asesoría técnica educativa (ATE) especializada en convivencia escolar, liderazgo directivo y gestión institucional. Soluciones que se sostienen." />
+  
+  <!-- Precargar recursos críticos -->
+  <link rel="preload" href="assets/css/educativo.css" as="style" />
+  <link rel="preload" href="assets/images/re-logo.svg" as="image" />
   <link rel="stylesheet" href="assets/css/educativo.css" />
+  
+  <!-- Prevenir FOUC -->
+  <style>body{opacity:0;transition:opacity .3s ease-in}body.loaded{opacity:1}</style>
 </head>
 
 <body>
@@ -734,5 +741,6 @@
 </a>
 
 <script src="assets/js/educativo.js"></script>
+<script>window.addEventListener('load',function(){document.body.classList.add('loaded');});</script>
 </body>
 </html>

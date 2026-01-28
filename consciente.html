@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Renhacer Consciente - Terapias Holísticas y Transformación Personal</title>
   <meta name="description" content="Psicología holística, Reiki, Constelaciones Familiares, Radiestesia. Terapias personalizadas y cursos para tu bienestar integral." />
+  
+  <!-- Precargar recursos críticos -->
+  <link rel="preload" href="assets/css/consciente.css" as="style" />
+  <link rel="preload" href="assets/images/rc-logo.svg" as="image" />
   <link rel="stylesheet" href="assets/css/consciente.css" />
-  <!-- Google Calendar Integration -->
-  <script src="https://apis.google.com/js/api.js"></script>
+  
+  <!-- Prevenir FOUC -->
+  <style>body{opacity:0;transition:opacity .3s ease-in}body.loaded{opacity:1}</style>
+  
+  <!-- Google Calendar Integration - async -->
+  <script src="https://apis.google.com/js/api.js" async></script>
 </head>
 
 <body>
@@ -572,5 +580,6 @@
 </a>
 
 <script src="assets/js/consciente.js"></script>
+<script>window.addEventListener('load',function(){document.body.classList.add('loaded');});</script>
 </body>
 </html>

@@ -4,8 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reservar Sesión - Renhacer Consciente</title>
+  
+  <!-- Precargar recursos críticos -->
+  <link rel="preload" href="assets/css/consciente.css" as="style" />
+  <link rel="preload" href="assets/css/reservas.css" as="style" />
+  <link rel="preload" href="assets/images/rc-logo.svg" as="image" />
   <link rel="stylesheet" href="assets/css/consciente.css" />
   <link rel="stylesheet" href="assets/css/reservas.css" />
+  
+  <!-- Prevenir FOUC -->
+  <style>body{opacity:0;transition:opacity .3s ease-in}body.loaded{opacity:1}</style>
 </head>
 
 <body>
@@ -120,5 +128,6 @@
   </div>
 </footer>
 
+<script>window.addEventListener('load',function(){document.body.classList.add('loaded');});</script>
 </body>
 </html>
