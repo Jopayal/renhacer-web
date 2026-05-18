@@ -21,24 +21,92 @@
   color: var(--text-light);
 }
 
-.reservas-layout {
+/* GRID DE DOS TARJETAS */
+.reservas-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 50px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
-.reservas-calendar {
+/* TARJETA DE RESERVA */
+.reserva-card {
   background: white;
-  border-radius: 25px;
-  padding: 20px;
+  border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-}
-
-.reservas-sidebar {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+}
+
+.reserva-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+}
+
+.reserva-titulo .icon-modalidad {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.reserva-titulo h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.reserva-detalles {
+  padding: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detalle-item {
+  margin-bottom: 20px;
+}
+
+.detalle-item:last-child {
+  margin-bottom: 0;
+}
+
+.detalle-item strong {
+  display: block;
+  color: var(--primary);
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.detalle-item p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.reserva-calendar {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reserva-calendar iframe {
+  border-radius: 12px !important;
+  width: 100% !important;
+  height: 600px !important;
+}
+
+/* SECCIÓN DE INFORMACIÓN COMPLEMENTARIA */
+.reservas-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 60px;
 }
 
 .info-box {
@@ -63,6 +131,7 @@
 .terapias-list {
   list-style: none;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .terapias-list li {
@@ -87,6 +156,7 @@
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s;
+  margin-top: 10px;
 }
 
 .link-terapias:hover {
@@ -95,40 +165,13 @@
 
 .checklist {
   list-style: none;
+  padding: 0;
 }
 
 .checklist li {
   padding: 8px 0;
   color: var(--text-light);
   font-size: 15px;
-}
-
-.modalidades .modalidad-item {
-  display: flex;
-  gap: 15px;
-  padding: 15px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.modalidades .modalidad-item:last-child {
-  border-bottom: none;
-}
-
-.modalidad-item .icon {
-  font-size: 32px;
-  flex-shrink: 0;
-}
-
-.modalidad-item strong {
-  display: block;
-  color: var(--text);
-  margin-bottom: 5px;
-}
-
-.modalidad-item p {
-  font-size: 13px;
-  margin: 0;
-  line-height: 1.5;
 }
 
 .payment-methods {
@@ -149,6 +192,7 @@
 .info-box.urgente {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   color: white;
+  grid-column: 1 / -1;
 }
 
 .info-box.urgente h3,
@@ -193,8 +237,47 @@
   text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
-  .reservas-layout {
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .reservas-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .reservas-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-box.urgente {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservas-header h1 {
+    font-size: 32px;
+  }
+
+  .reserva-titulo {
+    padding: 20px;
+  }
+
+  .reserva-titulo .icon-modalidad {
+    font-size: 30px;
+  }
+
+  .reserva-titulo h2 {
+    font-size: 18px;
+  }
+
+  .reserva-detalles {
+    padding: 20px;
+  }
+
+  .reserva-calendar {
+    padding: 15px;
+  }
+
+  .reserva-calendar iframe {
+    height: 500px !important;
   }
 }
