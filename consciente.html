@@ -9,7 +9,6 @@
   <meta name="description" content="Renhacer Consciente. Psicoterapia, bienestar emocional, terapias holísticas, procesos de autoconocimiento y transformación personal." />
 
   <link rel="preload" href="assets/images/rec-logo.svg" as="image" />
-  <link rel="preload" href="assets/images/rc-logo.svg" as="image" />
 
   <style>
     *{
@@ -276,12 +275,12 @@
 
     .hero-card{
       position:relative;
-      min-height:620px;
+      min-height:540px;
       border-radius:34px;
       overflow:hidden;
       background:
-        radial-gradient(circle at 18% 18%, rgba(255,255,255,0.24), transparent 26%),
-        radial-gradient(circle at 88% 12%, rgba(255,255,255,0.18), transparent 32%),
+        radial-gradient(circle at 18% 18%, rgba(255,255,255,0.18), transparent 27%),
+        radial-gradient(circle at 88% 12%, rgba(255,255,255,0.16), transparent 32%),
         linear-gradient(135deg, rgba(168,86,255,0.98) 0%, rgba(127,74,224,0.92) 47%, rgba(26,182,166,0.84) 100%);
       box-shadow:
         0 32px 80px rgba(30,20,60,0.16),
@@ -293,23 +292,37 @@
     .hero-card::before{
       content:"";
       position:absolute;
-      width:420px;
-      height:420px;
+      width:390px;
+      height:390px;
       border-radius:999px;
-      right:-170px;
-      top:-160px;
-      background:rgba(255,255,255,0.18);
+      right:-145px;
+      top:-140px;
+      background:rgba(255,255,255,0.17);
     }
 
     .hero-card::after{
       content:"";
       position:absolute;
-      width:260px;
-      height:260px;
+      width:245px;
+      height:245px;
       border-radius:999px;
-      left:-110px;
+      left:-105px;
       bottom:-120px;
-      background:rgba(255,255,255,0.14);
+      background:rgba(255,255,255,0.13);
+    }
+
+    .hero-watermark-logo{
+      position:absolute;
+      z-index:1;
+      top:44px;
+      right:56px;
+      width:170px;
+      height:170px;
+      object-fit:contain;
+      opacity:0.16;
+      filter:brightness(0) invert(1);
+      pointer-events:none;
+      transform:rotate(-5deg);
     }
 
     .hero-card-inner{
@@ -319,28 +332,8 @@
       padding:38px;
       display:flex;
       flex-direction:column;
-      justify-content:space-between;
-      color:#ffffff;
-    }
-
-    .conscious-logo-card{
-      width:118px;
-      height:118px;
-      border-radius:30px;
-      background:rgba(255,255,255,0.16);
-      border:1px solid rgba(255,255,255,0.28);
-      display:flex;
-      align-items:center;
       justify-content:center;
-      box-shadow:0 20px 45px rgba(0,0,0,0.14);
-      backdrop-filter:blur(12px);
-    }
-
-    .conscious-logo-card img{
-      width:86px;
-      height:86px;
-      object-fit:contain;
-      filter:drop-shadow(0 10px 18px rgba(0,0,0,0.10));
+      color:#ffffff;
     }
 
     .hero-card-content{
@@ -361,7 +354,7 @@
 
     .hero-card-content h2{
       margin:0 0 16px;
-      font-size:clamp(32px, 3.5vw, 48px);
+      font-size:clamp(34px, 3.3vw, 48px);
       line-height:1;
       letter-spacing:-0.06em;
       font-weight:950;
@@ -925,6 +918,10 @@
         margin:0 auto;
       }
 
+      .hero-card-content{
+        max-width:520px;
+      }
+
       .approach-grid,
       .services-grid,
       .courses-grid{
@@ -981,7 +978,7 @@
       }
 
       .hero-card{
-        min-height:520px;
+        min-height:500px;
       }
 
       .hero-card-inner{
@@ -990,6 +987,13 @@
 
       .hero-card-list{
         grid-template-columns:1fr;
+      }
+
+      .hero-watermark-logo{
+        width:140px;
+        height:140px;
+        top:34px;
+        right:34px;
       }
 
       .approach-grid,
@@ -1040,7 +1044,7 @@
       }
 
       .hero-card{
-        min-height:500px;
+        min-height:480px;
         border-radius:28px;
       }
 
@@ -1048,15 +1052,12 @@
         padding:24px;
       }
 
-      .conscious-logo-card{
-        width:96px;
-        height:96px;
-        border-radius:26px;
-      }
-
-      .conscious-logo-card img{
-        width:72px;
-        height:72px;
+      .hero-watermark-logo{
+        width:115px;
+        height:115px;
+        top:28px;
+        right:28px;
+        opacity:0.13;
       }
 
       .hero-card-content h2{
@@ -1181,11 +1182,9 @@
     </div>
 
     <div class="hero-card" aria-label="Identidad Renhacer Consciente">
-      <div class="hero-card-inner">
-        <div class="conscious-logo-card">
-          <img src="assets/images/rc-logo.svg" alt="Renhacer Consciente">
-        </div>
+      <img class="hero-watermark-logo" src="assets/images/rec-logo.svg" alt="">
 
+      <div class="hero-card-inner">
         <div class="hero-card-content">
           <span>Área personal, familiar y terapéutica</span>
 
