@@ -3,18 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Renhacer: Educación y Consciencia</title>
-  <meta name="description" content="Renhacer: Educación y Consciencia. Elige Renhacer Educativo o Renhacer Consciente." />
-  
+
+  <meta name="description" content="Renhacer: Educación y Consciencia. Consultoría educativa, convivencia escolar, bienestar emocional, terapia y procesos de transformación personal e institucional." />
+
+  <meta name="keywords" content="Renhacer, convivencia escolar, convivencia educativa, psicología, bienestar emocional, consultoría educativa, protocolos escolares, reglamento interno, terapia, educación y consciencia" />
+
+  <meta name="author" content="Renhacer: Educación y Consciencia" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Renhacer: Educación y Consciencia" />
+  <meta property="og:description" content="Convivencia educativa, bienestar emocional y transformación institucional para comunidades educativas, personas y familias." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/rec-logo.svg" />
+
   <!-- Precargar recursos críticos -->
   <link rel="preload" href="assets/css/styles.css" as="style" />
   <link rel="preload" href="assets/images/rec-logo.svg" as="image" />
   <link rel="preload" href="assets/images/re-portada.svg" as="image" />
   <link rel="preload" href="assets/images/rc-portada.svg" as="image" />
-  
+
   <link rel="stylesheet" href="assets/css/styles.css" />
-  
-  <!-- Prevenir FOUC (Flash of Unstyled Content) -->
+
+  <!-- Prevenir FOUC -->
   <style>
     body { opacity: 0; transition: opacity 0.3s ease-in; }
     body.loaded { opacity: 1; }
@@ -26,32 +38,36 @@
 <main class="layout">
 
   <!-- IZQUIERDA -->
-  <section class="left">
+  <section class="left" aria-label="Presentación principal de Renhacer">
 
-    <!-- (oculto por CSS) -->
+    <!-- Logo principal oculto por CSS en algunas resoluciones -->
     <img src="assets/images/rec-logo.svg" class="logo-principal" alt="Renhacer: Educación y Consciencia">
 
     <h1>RENHACER<br>EDUCACIÓN Y CONSCIENCIA</h1>
 
     <p class="texto">
-      Creemos que para <b>renacer</b>, es indispensable <b>hacer</b>. Somos un
-      espacio integrado donde la transformación personal y la excelencia
-      institucional convergen. A través de la acción consciente, acompañamos
-      a personas e instituciones en su camino de evolución.
+      Acompañamos a comunidades educativas, personas y familias mediante
+      <b>consultoría</b>, <b>formación</b>, <b>terapia</b> y herramientas prácticas
+      para el desarrollo humano, la convivencia educativa y el bienestar emocional.
     </p>
 
-    <img src="assets/images/rec-logo.svg" class="logo-grande" alt="Renhacer: Educación y Consciencia">
+    <p class="texto">
+      Creemos que para <b>renacer</b>, es indispensable <b>hacer</b>: ordenar,
+      transformar, sostener procesos y convertir la consciencia en acción concreta.
+    </p>
+
+    <img src="assets/images/rec-logo.svg" class="logo-grande" alt="Sello Renhacer: Educación y Consciencia">
   </section>
 
   <!-- DERECHA -->
-  <section class="right">
+  <section class="right" aria-label="Áreas de Renhacer">
 
     <!-- EDUCATIVO -->
-    <div class="card-area">
+    <article class="card-area">
       <div class="card-image-wrapper">
         <img src="assets/images/re-portada.svg" class="portada" alt="Renhacer Educativo">
         <div class="card-overlay">
-          <span class="overlay-text">Ver más →</span>
+          <span class="overlay-text">Ver área educativa →</span>
         </div>
       </div>
 
@@ -59,30 +75,30 @@
         <h2>Renhacer Educativo</h2>
 
         <p class="intro-area">
-          Para escuelas y equipos directivos: orden, criterios y acciones que se sostienen.
+          Para establecimientos, sostenedores, DAEM, equipos directivos y comunidades educativas que necesitan orden, criterio técnico y acciones aplicables.
         </p>
 
         <ul class="card-features">
-          <li>Convivencia escolar integral</li>
-          <li>Liderazgo y gestión institucional</li>
-          <li>Protocolos aplicables y capacitación</li>
+          <li>Convivencia educativa y bienestar escolar</li>
+          <li>Reglamentos internos, protocolos y gestión institucional</li>
+          <li>Capacitaciones, acompañamiento y herramientas prácticas</li>
         </ul>
 
-        <a href="educativo.html" class="btn-cta btn-educativo">
-          Explorar Soluciones
+        <a href="educativo.html" class="btn-cta btn-educativo" aria-label="Ir a Renhacer Educativo">
+          Ver servicios educativos
           <span class="btn-arrow">→</span>
         </a>
 
         <img src="assets/images/re-logo.svg" class="logo-area logo-educativo" alt="Sello Renhacer Educativo">
       </div>
-    </div>
+    </article>
 
     <!-- CONSCIENTE -->
-    <div class="card-area">
+    <article class="card-area">
       <div class="card-image-wrapper">
         <img src="assets/images/rc-portada.svg" class="portada" alt="Renhacer Consciente">
         <div class="card-overlay">
-          <span class="overlay-text">Ver más →</span>
+          <span class="overlay-text">Ver área consciente →</span>
         </div>
       </div>
 
@@ -90,23 +106,23 @@
         <h2>Renhacer Consciente</h2>
 
         <p class="intro-area">
-          Para personas y familias: bienestar, claridad emocional y cambio sostenible.
+          Para personas, familias y procesos individuales que buscan bienestar emocional, claridad interior y transformación sostenible.
         </p>
 
         <ul class="card-features">
-          <li>Terapias holísticas personalizadas</li>
-          <li>Cursos y programas guiados</li>
-          <li>Regulación emocional y crecimiento</li>
+          <li>Psicoterapia y acompañamiento emocional</li>
+          <li>Terapias holísticas y procesos de autoconocimiento</li>
+          <li>Cursos, programas guiados y crecimiento personal</li>
         </ul>
 
-        <a href="consciente.html" class="btn-cta btn-consciente">
-          Comenzar Transformación
+        <a href="consciente.html" class="btn-cta btn-consciente" aria-label="Ir a Renhacer Consciente">
+          Conocer terapias y programas
           <span class="btn-arrow">→</span>
         </a>
 
         <img src="assets/images/rc-logo.svg" class="logo-area logo-consciente" alt="Sello Renhacer Consciente">
       </div>
-    </div>
+    </article>
 
   </section>
 
