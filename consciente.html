@@ -297,7 +297,7 @@
       border-radius:999px;
       right:-145px;
       top:-140px;
-      background:rgba(255,255,255,0.17);
+      background:rgba(255,255,255,0.14);
     }
 
     .hero-card::after{
@@ -311,18 +311,30 @@
       background:rgba(255,255,255,0.13);
     }
 
-    .hero-watermark-logo{
+    .hero-logo-orb{
       position:absolute;
       z-index:1;
-      top:44px;
-      right:56px;
-      width:170px;
-      height:170px;
-      object-fit:contain;
-      opacity:0.16;
-      filter:brightness(0) invert(1);
+      top:52px;
+      right:60px;
+      width:230px;
+      height:230px;
+      border-radius:999px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.12);
       pointer-events:none;
-      transform:rotate(-5deg);
+      overflow:hidden;
+    }
+
+    .hero-logo-orb img{
+      width:78%;
+      height:78%;
+      object-fit:contain;
+      opacity:0.18;
+      filter:brightness(0) invert(1);
+      transform:rotate(-4deg);
     }
 
     .hero-card-inner{
@@ -989,11 +1001,17 @@
         grid-template-columns:1fr;
       }
 
-      .hero-watermark-logo{
-        width:140px;
-        height:140px;
-        top:34px;
+      .hero-logo-orb{
+        width:180px;
+        height:180px;
+        top:36px;
         right:34px;
+      }
+
+      .hero-logo-orb img{
+        width:78%;
+        height:78%;
+        opacity:0.16;
       }
 
       .approach-grid,
@@ -1052,12 +1070,16 @@
         padding:24px;
       }
 
-      .hero-watermark-logo{
-        width:115px;
-        height:115px;
+      .hero-logo-orb{
+        width:135px;
+        height:135px;
         top:28px;
-        right:28px;
-        opacity:0.13;
+        right:22px;
+        opacity:0.95;
+      }
+
+      .hero-logo-orb img{
+        opacity:0.14;
       }
 
       .hero-card-content h2{
@@ -1182,7 +1204,9 @@
     </div>
 
     <div class="hero-card" aria-label="Identidad Renhacer Consciente">
-      <img class="hero-watermark-logo" src="assets/images/rec-logo.svg" alt="">
+      <div class="hero-logo-orb" aria-hidden="true">
+        <img src="assets/images/rec-logo.svg" alt="">
+      </div>
 
       <div class="hero-card-inner">
         <div class="hero-card-content">
