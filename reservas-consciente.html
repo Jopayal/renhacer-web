@@ -3,61 +3,167 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reservar Sesión - Renhacer Consciente</title>
-  
-  <!-- Precargar recursos críticos -->
+
+  <title>Reservar sesión | Renhacer Consciente</title>
+
+  <meta
+    name="description"
+    content="Agenda una sesión online o presencial en Renhacer Consciente, área personal y terapéutica de Renhacer: Educación y Consciencia."
+  />
+
   <link rel="preload" href="assets/css/consciente.css" as="style" />
   <link rel="preload" href="assets/css/reservas.css" as="style" />
-  <link rel="preload" href="assets/images/rc-logo.svg" as="image" />
+  <link rel="preload" href="assets/images/rec-logo.svg" as="image" />
+
   <link rel="stylesheet" href="assets/css/consciente.css" />
   <link rel="stylesheet" href="assets/css/reservas.css" />
-  
-  <!-- Prevenir FOUC -->
-  <style>body{opacity:0;transition:opacity .3s ease-in}body.loaded{opacity:1}</style>
+
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
 </head>
 
-<body>
+<body class="reservas-page">
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container-header">
-    <a href="consciente.html" class="logo-link">
-      <img src="assets/images/rc-logo.svg" alt="Renhacer Consciente" class="logo-header">
-    </a>
-    <nav class="nav">
-      <a href="consciente.html">← Volver</a>
-      <a href="consciente.html#terapias">Terapias</a>
-      <a href="tienda-consciente.html">Tienda</a>
-      <a href="index.html">Inicio</a>
-    </nav>
-  </div>
-</header>
+  <header class="header reservas-header-site">
+    <div class="container-header">
+      <a href="index.html" class="logo-link" aria-label="Ir al inicio de Renhacer">
+        <img
+          src="assets/images/rec-logo.svg"
+          alt="Renhacer: Educación y Consciencia"
+          class="logo-header"
+        >
 
-<!-- MAIN -->
-<main class="reservas-main">
-  <div class="container">
-    
-    <div class="reservas-header">
-      <h1>Reservas Renhacer</h1>
+        <span class="reservas-brand-text">
+          <strong>Renhacer</strong>
+          <small>Educación y Consciencia</small>
+        </span>
+      </a>
+
+      <nav class="nav reservas-nav" aria-label="Navegación principal">
+        <a href="consciente.html">← Volver</a>
+        <a href="consciente.html#servicios">Terapias</a>
+        <a href="tienda-consciente.html">Tienda</a>
+        <a href="index.html">Inicio</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- GOOGLE CALENDAR ÚNICO -->
-    <div class="reservas-calendar">
-      <!-- Google Calendar Appointment Scheduling begin -->
-      <iframe src="https://calendar.google.com/calendar/appointments/AcZssZ26pI_-TD82dL21e7AiyGgllwLZoiUbbqIdFJo=?gv=true" style="border: 0" width="100%" height="800" frameborder="0"></iframe>
-      <!-- end Google Calendar Appointment Scheduling -->
+  <main class="reservas-main">
+    <div class="reservas-bg-orb reservas-bg-orb-one" aria-hidden="true"></div>
+    <div class="reservas-bg-orb reservas-bg-orb-two" aria-hidden="true"></div>
+
+    <div class="container reservas-container">
+
+      <section class="reservas-hero" aria-label="Reserva de sesión Renhacer Consciente">
+        <div class="reservas-eyebrow">
+          Renhacer Consciente · Agenda online
+        </div>
+
+        <h1>Agenda tu sesión en <span>Renhacer Consciente.</span></h1>
+
+        <p>
+          Escoge modalidad online o presencial, selecciona un horario disponible y recibe
+          la confirmación de tu reserva. Un primer paso claro para iniciar tu proceso con
+          calma, propósito y acompañamiento profesional.
+        </p>
+
+        <div class="reservas-steps" aria-label="Pasos para reservar">
+          <div class="reservas-step">
+            <strong>01</strong>
+            <span>Elige modalidad</span>
+          </div>
+
+          <div class="reservas-step">
+            <strong>02</strong>
+            <span>Selecciona horario</span>
+          </div>
+
+          <div class="reservas-step">
+            <strong>03</strong>
+            <span>Confirma tu reserva</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservas-layout" aria-label="Calendario de reservas">
+        <aside class="reservas-side-card">
+          <div class="reservas-side-logo" aria-hidden="true">
+            <img src="assets/images/rec-logo.svg" alt="">
+          </div>
+
+          <span class="reservas-side-kicker">Antes de agendar</span>
+
+          <h2>Elige el formato que mejor se ajuste a tu proceso.</h2>
+
+          <p>
+            Puedes reservar una sesión online o presencial, según disponibilidad.
+            En ambos casos trabajaremos desde una mirada profesional, cercana e integrativa.
+          </p>
+
+          <ul>
+            <li>Sesiones de 60 minutos.</li>
+            <li>Modalidad online mediante Google Meet.</li>
+            <li>Modalidad presencial según disponibilidad.</li>
+            <li>Confirmación automática al finalizar la reserva.</li>
+          </ul>
+
+          <div class="reservas-note">
+            <strong>Recomendación.</strong>
+            <span>
+              Si es tu primera vez, agenda la modalidad que te resulte más cómoda para conversar
+              con tranquilidad.
+            </span>
+          </div>
+        </aside>
+
+        <div class="reservas-calendar">
+          <div class="reservas-calendar-top">
+            <div>
+              <span>Calendario disponible</span>
+              <h2>Selecciona tu sesión</h2>
+            </div>
+
+            <div class="reservas-calendar-badge">
+              Online / Presencial
+            </div>
+          </div>
+
+          <iframe
+            src="https://calendar.google.com/calendar/appointments/AcZssZ26pI_-TD82dL21e7AiyGgllwLZoiUbbqIdFJo=?gv=true"
+            title="Calendario de reservas Renhacer Consciente"
+            width="100%"
+            height="800"
+            frameborder="0"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
     </div>
+  </main>
 
-  </div>
-</main>
+  <footer class="footer-simple">
+    <div class="container">
+      <p>
+        © 2026 Renhacer Consciente · Parte de
+        <a href="index.html">Renhacer: Educación y Consciencia</a>
+      </p>
+    </div>
+  </footer>
 
-<!-- FOOTER -->
-<footer class="footer-simple">
-  <div class="container">
-    <p>&copy; 2024 Renhacer Consciente | <a href="consciente.html">Volver al inicio</a></p>
-  </div>
-</footer>
+  <script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("loaded");
+    });
+  </script>
 
-<script>window.addEventListener('load',function(){document.body.classList.add('loaded');});</script>
 </body>
 </html>
