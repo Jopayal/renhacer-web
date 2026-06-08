@@ -41,7 +41,7 @@ body.home-canva{
 .brand{
   display:inline-flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
   color:#171723;
   text-decoration:none;
   font-weight:850;
@@ -49,14 +49,35 @@ body.home-canva{
 }
 
 .brand img{
-  width:40px;
-  height:40px;
+  width:52px;
+  height:52px;
   display:block;
   object-fit:contain;
+  filter:drop-shadow(0 8px 18px rgba(168,86,255,0.14));
 }
 
-.brand span{
-  font-size:19px;
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  line-height:1.05;
+}
+
+.brand-text strong{
+  display:block;
+  font-size:22px;
+  font-weight:900;
+  color:#11111c;
+  letter-spacing:-0.04em;
+}
+
+.brand-text small{
+  display:block;
+  margin-top:4px;
+  font-size:12.5px;
+  font-weight:750;
+  color:#7430d6;
+  letter-spacing:0.01em;
 }
 
 .site-nav{
@@ -458,8 +479,16 @@ body.home-canva{
   }
 
   .brand img{
-    width:38px;
-    height:38px;
+    width:44px;
+    height:44px;
+  }
+
+  .brand-text strong{
+    font-size:19px;
+  }
+
+  .brand-text small{
+    font-size:11px;
   }
 
   .hero-shell{
@@ -545,5 +574,28 @@ body.home-canva{
 
   .route-content li{
     font-size:13.5px;
+  }
+}
+
+@media(max-width:390px){
+  .brand{
+    gap:10px;
+  }
+
+  .brand img{
+    width:40px;
+    height:40px;
+  }
+
+  .brand-text strong{
+    font-size:18px;
+  }
+
+  .brand-text small{
+    font-size:10px;
+  }
+
+  .hero-copy h1{
+    font-size:32px;
   }
 }
