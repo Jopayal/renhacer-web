@@ -11,11 +11,9 @@
     content="Agenda una sesión online o presencial en Renhacer Consciente, área personal y terapéutica de Renhacer: Educación y Consciencia."
   />
 
-  <link rel="preload" href="assets/css/consciente.css" as="style" />
   <link rel="preload" href="assets/css/reservas.css" as="style" />
   <link rel="preload" href="assets/images/rec-logo.svg" as="image" />
 
-  <link rel="stylesheet" href="assets/css/consciente.css" />
   <link rel="stylesheet" href="assets/css/reservas.css" />
 
   <style>
@@ -32,13 +30,13 @@
 
 <body class="reservas-page">
 
-  <header class="header reservas-header-site">
-    <div class="container-header">
-      <a href="index.html" class="logo-link" aria-label="Ir al inicio de Renhacer">
+  <header class="reservas-header-site">
+    <div class="reservas-header-inner">
+      <a href="index.html" class="reservas-brand" aria-label="Ir al inicio de Renhacer">
         <img
           src="assets/images/rec-logo.svg"
           alt="Renhacer: Educación y Consciencia"
-          class="logo-header"
+          class="reservas-brand-logo"
         >
 
         <span class="reservas-brand-text">
@@ -47,7 +45,7 @@
         </span>
       </a>
 
-      <nav class="nav reservas-nav" aria-label="Navegación principal">
+      <nav class="reservas-nav" aria-label="Navegación principal">
         <a href="consciente.html">← Volver</a>
         <a href="consciente.html#servicios">Terapias</a>
         <a href="tienda-consciente.html">Tienda</a>
@@ -57,10 +55,10 @@
   </header>
 
   <main class="reservas-main">
-    <div class="reservas-bg-orb reservas-bg-orb-one" aria-hidden="true"></div>
-    <div class="reservas-bg-orb reservas-bg-orb-two" aria-hidden="true"></div>
+    <div class="reservas-orb reservas-orb-one" aria-hidden="true"></div>
+    <div class="reservas-orb reservas-orb-two" aria-hidden="true"></div>
 
-    <div class="container reservas-container">
+    <div class="reservas-shell">
 
       <section class="reservas-hero" aria-label="Reserva de sesión Renhacer Consciente">
         <div class="reservas-eyebrow">
@@ -74,32 +72,32 @@
           la confirmación de tu reserva. Un primer paso claro para iniciar tu proceso con
           calma, propósito y acompañamiento profesional.
         </p>
-
-        <div class="reservas-steps" aria-label="Pasos para reservar">
-          <div class="reservas-step">
-            <strong>01</strong>
-            <span>Elige modalidad</span>
-          </div>
-
-          <div class="reservas-step">
-            <strong>02</strong>
-            <span>Selecciona horario</span>
-          </div>
-
-          <div class="reservas-step">
-            <strong>03</strong>
-            <span>Confirma tu reserva</span>
-          </div>
-        </div>
       </section>
 
-      <section class="reservas-layout" aria-label="Calendario de reservas">
-        <aside class="reservas-side-card">
-          <div class="reservas-side-logo" aria-hidden="true">
+      <section class="reservas-steps" aria-label="Pasos para reservar">
+        <article class="reservas-step">
+          <strong>01</strong>
+          <span>Elige modalidad</span>
+        </article>
+
+        <article class="reservas-step">
+          <strong>02</strong>
+          <span>Selecciona horario</span>
+        </article>
+
+        <article class="reservas-step">
+          <strong>03</strong>
+          <span>Confirma tu reserva</span>
+        </article>
+      </section>
+
+      <section class="reservas-info-grid" aria-label="Información antes de reservar">
+        <article class="reservas-info-card reservas-info-featured">
+          <div class="reservas-watermark" aria-hidden="true">
             <img src="assets/images/rec-logo.svg" alt="">
           </div>
 
-          <span class="reservas-side-kicker">Antes de agendar</span>
+          <span>Antes de agendar</span>
 
           <h2>Elige el formato que mejor se ajuste a tu proceso.</h2>
 
@@ -107,51 +105,61 @@
             Puedes reservar una sesión online o presencial, según disponibilidad.
             En ambos casos trabajaremos desde una mirada profesional, cercana e integrativa.
           </p>
+        </article>
 
-          <ul>
-            <li>Sesiones de 60 minutos.</li>
-            <li>Modalidad online mediante Google Meet.</li>
-            <li>Modalidad presencial según disponibilidad.</li>
-            <li>Confirmación automática al finalizar la reserva.</li>
-          </ul>
+        <article class="reservas-info-card">
+          <span>Duración</span>
+          <h3>Sesiones de 60 minutos.</h3>
+          <p>
+            Un espacio suficiente para revisar tu motivo de consulta, ordenar objetivos
+            y comenzar con claridad.
+          </p>
+        </article>
 
-          <div class="reservas-note">
-            <strong>Recomendación.</strong>
-            <span>
-              Si es tu primera vez, agenda la modalidad que te resulte más cómoda para conversar
-              con tranquilidad.
-            </span>
+        <article class="reservas-info-card">
+          <span>Modalidad</span>
+          <h3>Online o presencial.</h3>
+          <p>
+            La sesión online se realiza por Google Meet. La modalidad presencial queda
+            sujeta a disponibilidad.
+          </p>
+        </article>
+      </section>
+
+      <section class="reservas-calendar-card" aria-label="Calendario de reservas">
+        <div class="reservas-calendar-header">
+          <div>
+            <span>Calendario disponible</span>
+            <h2>Selecciona tu sesión</h2>
           </div>
-        </aside>
 
-        <div class="reservas-calendar">
-          <div class="reservas-calendar-top">
-            <div>
-              <span>Calendario disponible</span>
-              <h2>Selecciona tu sesión</h2>
-            </div>
-
-            <div class="reservas-calendar-badge">
-              Online / Presencial
-            </div>
+          <div class="reservas-calendar-badge">
+            Online / Presencial
           </div>
-
-          <iframe
-            src="https://calendar.google.com/calendar/appointments/AcZssZ26pI_-TD82dL21e7AiyGgllwLZoiUbbqIdFJo=?gv=true"
-            title="Calendario de reservas Renhacer Consciente"
-            width="100%"
-            height="800"
-            frameborder="0"
-            loading="lazy"
-          ></iframe>
         </div>
+
+        <iframe
+          src="https://calendar.google.com/calendar/appointments/AcZssZ26pI_-TD82dL21e7AiyGgllwLZoiUbbqIdFJo=?gv=true"
+          title="Calendario de reservas Renhacer Consciente"
+          width="100%"
+          height="800"
+          frameborder="0"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="reservas-final-note" aria-label="Nota importante">
+        <strong>Nota importante:</strong>
+        Este espacio no reemplaza atención médica, psiquiátrica ni servicios de urgencia.
+        En situaciones de riesgo inmediato o emergencia, corresponde acudir a los servicios
+        de salud o emergencia disponibles en tu territorio.
       </section>
 
     </div>
   </main>
 
   <footer class="footer-simple">
-    <div class="container">
+    <div class="reservas-shell">
       <p>
         © 2026 Renhacer Consciente · Parte de
         <a href="index.html">Renhacer: Educación y Consciencia</a>
