@@ -314,8 +314,8 @@
     .hero-logo-orb{
       position:absolute;
       z-index:1;
-      top:28px;
-      right:30px;
+      top:31px;
+      right:31px;
       width:236px;
       height:236px;
       border-radius:999px;
@@ -323,19 +323,21 @@
       align-items:center;
       justify-content:center;
       background:rgba(255,255,255,0.115);
-      border:1px solid rgba(255,255,255,0.15);
-      box-shadow:inset 0 0 38px rgba(255,255,255,0.07);
+      border:1px solid rgba(255,255,255,0.16);
+      box-shadow:inset 0 0 42px rgba(255,255,255,0.08);
       pointer-events:none;
       overflow:hidden;
     }
 
     .hero-logo-orb img{
-      width:74%;
-      height:74%;
+      width:75%;
+      height:75%;
       object-fit:contain;
+      object-position:center;
       opacity:0.16;
       filter:brightness(0) invert(1);
-      transform:none;
+      transform:translate(8px, 7px);
+      transform-origin:center;
     }
 
     .hero-card-inner{
@@ -389,26 +391,36 @@
     }
 
     .mini-card{
-      padding:16px;
+      min-height:142px;
+      padding:18px 20px;
       border-radius:20px;
       background:rgba(255,255,255,0.15);
       border:1px solid rgba(255,255,255,0.20);
       backdrop-filter:blur(10px);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
     }
 
     .mini-card strong{
       display:block;
-      margin-bottom:4px;
+      margin-bottom:8px;
       color:#ffffff;
       font-size:14px;
       font-weight:900;
+      text-align:center;
     }
 
     .mini-card span{
-      color:rgba(255,255,255,0.82);
+      display:block;
+      max-width:210px;
+      color:rgba(255,255,255,0.84);
       font-size:12.5px;
-      line-height:1.35;
+      line-height:1.38;
       font-weight:650;
+      text-align:center;
     }
 
     .section{
@@ -1010,9 +1022,10 @@
       }
 
       .hero-logo-orb img{
-        width:72%;
-        height:72%;
+        width:73%;
+        height:73%;
         opacity:0.145;
+        transform:translate(6px, 5px);
       }
 
       .approach-grid,
@@ -1080,9 +1093,19 @@
       }
 
       .hero-logo-orb img{
-        width:72%;
-        height:72%;
+        width:73%;
+        height:73%;
         opacity:0.13;
+        transform:translate(5px, 4px);
+      }
+
+      .mini-card{
+        min-height:128px;
+        padding:16px 18px;
+      }
+
+      .mini-card span{
+        max-width:230px;
       }
 
       .hero-card-content h2{
