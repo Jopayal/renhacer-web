@@ -300,6 +300,7 @@ a {
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(15, 91, 245, 0.12);
   box-shadow: 0 12px 28px rgba(30, 20, 60, 0.06);
+  text-align: center;
 }
 
 .edu-trust-pill strong {
@@ -423,6 +424,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .edu-mini-card strong {
@@ -491,6 +493,7 @@ a {
 
 .edu-pain-card {
   padding: 24px;
+  text-align: center;
 }
 
 .edu-pain-card span {
@@ -517,6 +520,7 @@ a {
   line-height: 1.12;
   letter-spacing: -0.04em;
   font-weight: 950;
+  text-align: center;
 }
 
 .edu-pain-card p,
@@ -527,6 +531,12 @@ a {
   color: #555565;
   font-size: 14.5px;
   line-height: 1.58;
+}
+
+.edu-pain-card p,
+.edu-difference-grid p,
+.edu-package-card p {
+  text-align: center;
 }
 
 .edu-solutions-grid {
@@ -573,7 +583,7 @@ a {
 .edu-service-tag {
   width: max-content;
   max-width: calc(100% - 120px);
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   padding: 7px 11px;
   border-radius: 999px;
   background: rgba(15, 91, 245, 0.09);
@@ -581,6 +591,7 @@ a {
   font-size: 11.5px;
   font-weight: 950;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .edu-solution-card h3 {
@@ -590,6 +601,7 @@ a {
 
 .edu-solution-card p {
   margin-bottom: 18px;
+  text-align: center;
 }
 
 .edu-solution-card ul {
@@ -608,6 +620,7 @@ a {
   font-size: 13.5px;
   line-height: 1.35;
   font-weight: 750;
+  text-align: left;
 }
 
 .edu-solution-card li::before {
@@ -654,12 +667,13 @@ a {
 
 .edu-package-card {
   padding: 24px;
+  text-align: center;
 }
 
 .edu-package-number {
   width: 42px;
   height: 42px;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -673,6 +687,7 @@ a {
 .edu-package-meta {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
   margin-top: 18px;
 }
@@ -730,12 +745,13 @@ a {
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(10px);
+  text-align: center;
 }
 
 .edu-method-steps strong {
   width: 40px;
   height: 40px;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -753,6 +769,7 @@ a {
   line-height: 1.1;
   font-weight: 950;
   letter-spacing: -0.035em;
+  text-align: center;
 }
 
 .edu-method-steps p {
@@ -761,10 +778,12 @@ a {
   font-size: 13.5px;
   line-height: 1.42;
   font-weight: 650;
+  text-align: center;
 }
 
 .edu-difference-grid article {
   padding: 24px;
+  text-align: center;
 }
 
 .edu-direction-card {
@@ -906,6 +925,7 @@ a {
   line-height: 1;
   letter-spacing: -0.045em;
   font-weight: 950;
+  text-align: center;
 }
 
 .edu-form label {
@@ -1210,7 +1230,7 @@ a {
   }
 
   .edu-trust-pill {
-    text-align: left;
+    text-align: center;
   }
 
   .edu-hero-card {
