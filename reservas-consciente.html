@@ -4,16 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Renhacer: Educación y Consciencia</title>
+  <title>Reservar sesión | Renhacer Consciente</title>
 
-  <meta name="description" content="Renhacer: Educación y Consciencia. Consultoría educativa, convivencia escolar, bienestar emocional, terapia y procesos de transformación personal e institucional." />
+  <meta
+    name="description"
+    content="Agenda una sesión online o presencial en Renhacer Consciente, área personal y terapéutica de Renhacer: Educación y Consciencia."
+  />
 
-  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="preload" href="assets/css/reservas.css" as="style" />
   <link rel="preload" href="assets/images/rec-logo.svg" as="image" />
-  <link rel="preload" href="assets/images/logo-renhacer-educativo.png" as="image" />
-  <link rel="preload" href="assets/images/logo-renhacer-consciente.png" as="image" />
 
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/reservas.css" />
 
   <style>
     body {
@@ -24,226 +25,153 @@
     body.loaded {
       opacity: 1;
     }
-
-    .visual-panel .route-area-logo {
-      width: 108px !important;
-      height: 108px !important;
-      min-width: 108px !important;
-      max-width: 108px !important;
-      min-height: 108px !important;
-      max-height: 108px !important;
-      aspect-ratio: 1 / 1 !important;
-      padding: 8px !important;
-      border-radius: 28px !important;
-      background: rgba(255, 255, 255, 0.92) !important;
-      border: 1px solid rgba(255, 255, 255, 0.88) !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      flex: 0 0 108px !important;
-      box-shadow:
-        0 16px 30px rgba(30, 20, 60, 0.16),
-        0 6px 14px rgba(30, 20, 60, 0.08),
-        inset 0 0 0 1px rgba(135, 55, 219, 0.07) !important;
-      overflow: hidden !important;
-      opacity: 1 !important;
-      transform: none !important;
-      backdrop-filter: blur(4px) !important;
-      -webkit-backdrop-filter: blur(4px) !important;
-    }
-
-    .visual-panel .route-area-logo img {
-      width: 108% !important;
-      height: 108% !important;
-      max-width: none !important;
-      max-height: none !important;
-      object-fit: contain !important;
-      display: block !important;
-      opacity: 1 !important;
-      filter:
-        saturate(1.08)
-        contrast(1.04)
-        drop-shadow(0 4px 7px rgba(30, 20, 60, 0.16)) !important;
-      mix-blend-mode: normal !important;
-      transform: none !important;
-    }
-
-    @media (max-width: 1180px) {
-      .visual-panel .route-area-logo {
-        width: 104px !important;
-        height: 104px !important;
-        min-width: 104px !important;
-        max-width: 104px !important;
-        min-height: 104px !important;
-        max-height: 104px !important;
-        flex-basis: 104px !important;
-        border-radius: 27px !important;
-      }
-
-      .visual-panel .route-area-logo img {
-        width: 108% !important;
-        height: 108% !important;
-      }
-    }
-
-    @media (max-width: 820px) {
-      .visual-panel .route-area-logo {
-        width: 96px !important;
-        height: 96px !important;
-        min-width: 96px !important;
-        max-width: 96px !important;
-        min-height: 96px !important;
-        max-height: 96px !important;
-        flex-basis: 96px !important;
-        border-radius: 25px !important;
-        padding: 7px !important;
-      }
-
-      .visual-panel .route-area-logo img {
-        width: 110% !important;
-        height: 110% !important;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .visual-panel .route-area-logo {
-        width: 88px !important;
-        height: 88px !important;
-        min-width: 88px !important;
-        max-width: 88px !important;
-        min-height: 88px !important;
-        max-height: 88px !important;
-        flex-basis: 88px !important;
-        border-radius: 23px !important;
-        padding: 7px !important;
-      }
-
-      .visual-panel .route-area-logo img {
-        width: 112% !important;
-        height: 112% !important;
-      }
-    }
   </style>
 </head>
 
-<body class="home-canva">
+<body class="reservas-page">
 
-<header class="site-header">
-  <a href="index.html" class="brand">
-    <img src="assets/images/rec-logo.svg" alt="Renhacer: Educación y Consciencia">
+  <header class="reservas-header-site">
+    <div class="reservas-header-inner">
+      <a href="index.html" class="reservas-brand" aria-label="Ir al inicio de Renhacer">
+        <img
+          src="assets/images/rec-logo.svg"
+          alt="Renhacer: Educación y Consciencia"
+          class="reservas-brand-logo"
+        >
 
-    <span class="brand-text">
-      <strong>Renhacer</strong>
-      <small>Educación y Consciencia</small>
-    </span>
-  </a>
+        <span class="reservas-brand-text">
+          <strong>Renhacer</strong>
+          <small>Educación y Consciencia</small>
+        </span>
+      </a>
 
-  <nav class="site-nav" aria-label="Navegación principal">
-    <a href="educativo.html">Educativo</a>
-    <a href="consciente.html">Consciente</a>
-    <a href="mailto:renhacerconsciente@gmail.com">Contacto</a>
-  </nav>
-</header>
-
-<main class="hero-shell">
-
-  <section class="hero-copy" aria-label="Presentación principal">
-    <p class="eyebrow">Consultoría educativa · Psicología · Bienestar · Formación</p>
-
-    <h1>Educación, bienestar y transformación con sentido humano.</h1>
-
-    <p class="lead">
-      Acompañamos a comunidades educativas, personas y familias mediante
-      <strong>consultoría</strong>, <strong>formación</strong>, <strong>terapia</strong>
-      y herramientas prácticas para transformar la convivencia, fortalecer el bienestar
-      y sostener procesos de cambio reales.
-    </p>
-
-    <p class="brand-line">
-      Para <strong>renacer</strong>, hay que <strong>hacer</strong>.
-    </p>
-
-    <div class="hero-actions">
-      <a href="educativo.html" class="btn-primary">Ver área educativa</a>
-      <a href="consciente.html" class="btn-secondary">Conocer área consciente</a>
+      <nav class="reservas-nav" aria-label="Navegación principal">
+        <a href="consciente.html">← Volver</a>
+        <a href="consciente.html#servicios">Terapias</a>
+        <a href="tienda-consciente.html">Tienda</a>
+        <a href="index.html">Inicio</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section class="route-grid" aria-label="Áreas de Renhacer">
+  <main class="reservas-main">
+    <div class="reservas-orb reservas-orb-one" aria-hidden="true"></div>
+    <div class="reservas-orb reservas-orb-two" aria-hidden="true"></div>
 
-    <article class="route-card educativo-card">
-      <div class="visual-panel visual-educativo">
-        <div class="route-area-logo" aria-hidden="true">
-          <img src="assets/images/logo-renhacer-educativo.png" alt="">
+    <div class="reservas-shell">
+
+      <section class="reservas-hero" aria-label="Reserva de sesión Renhacer Consciente">
+        <div class="reservas-eyebrow">
+          Renhacer Consciente · Agenda online
         </div>
 
-        <p>Área educativa e institucional</p>
-      </div>
-
-      <div class="route-content">
-        <span class="route-label">Para establecimientos y equipos educativos</span>
-
-        <h2>Renhacer<br>Educativo</h2>
+        <h1>Agenda tu sesión en <span>Renhacer Consciente</span></h1>
 
         <p>
-          Consultoría, convivencia educativa, reglamentos, protocolos, capacitación
-          y acompañamiento institucional.
+          Escoge modalidad online o presencial, selecciona un horario disponible y recibe
+          la confirmación de tu reserva. Un primer paso claro para iniciar tu proceso con
+          calma, propósito y acompañamiento profesional.
         </p>
+      </section>
 
-        <ul>
-          <li>Convivencia educativa y bienestar escolar.</li>
-          <li>Reglamentos internos y protocolos aplicables.</li>
-          <li>Capacitación y acompañamiento técnico.</li>
-        </ul>
+      <section class="reservas-steps" aria-label="Pasos para reservar">
+        <article class="reservas-step">
+          <strong>01</strong>
+          <span>Elige modalidad</span>
+        </article>
 
-        <a href="educativo.html" class="route-button blue">
-          Ver servicios educativos
-          <span>→</span>
-        </a>
-      </div>
-    </article>
+        <article class="reservas-step">
+          <strong>02</strong>
+          <span>Selecciona horario</span>
+        </article>
 
-    <article class="route-card consciente-card">
-      <div class="visual-panel visual-consciente">
-        <div class="route-area-logo" aria-hidden="true">
-          <img src="assets/images/logo-renhacer-consciente.png" alt="">
+        <article class="reservas-step">
+          <strong>03</strong>
+          <span>Confirma tu reserva</span>
+        </article>
+      </section>
+
+      <section class="reservas-info-grid" aria-label="Información antes de reservar">
+        <article class="reservas-info-card reservas-info-featured">
+          <span>Antes de agendar</span>
+
+          <h2>Elige el formato que mejor se ajuste a tu proceso.</h2>
+
+          <p>
+            Puedes reservar una sesión online o presencial, según disponibilidad.
+            En ambos casos trabajaremos desde una mirada profesional, cercana e integrativa.
+          </p>
+        </article>
+
+        <article class="reservas-info-card">
+          <span>Duración</span>
+
+          <h3>Sesiones de 60 minutos.</h3>
+
+          <p>
+            Un espacio suficiente para revisar tu motivo de consulta, ordenar objetivos
+            y comenzar con claridad.
+          </p>
+        </article>
+
+        <article class="reservas-info-card">
+          <span>Modalidad</span>
+
+          <h3>Online o presencial.</h3>
+
+          <p>
+            La sesión online se realiza por Google Meet. La modalidad presencial queda
+            sujeta a disponibilidad.
+          </p>
+        </article>
+      </section>
+
+      <section class="reservas-calendar-card" aria-label="Calendario de reservas">
+        <div class="reservas-calendar-header">
+          <div>
+            <span>Calendario disponible</span>
+            <h2>Selecciona tu sesión</h2>
+          </div>
+
+          <div class="reservas-calendar-badge">
+            Online / Presencial
+          </div>
         </div>
 
-        <p>Área personal, familiar y terapéutica</p>
-      </div>
+        <iframe
+          src="https://calendar.google.com/calendar/appointments/AcZssZ26pI_-TD82dL21e7AiyGgllwLZoiUbbqIdFJo=?gv=true"
+          title="Calendario de reservas Renhacer Consciente"
+          width="100%"
+          height="800"
+          frameborder="0"
+          loading="lazy"
+        ></iframe>
+      </section>
 
-      <div class="route-content">
-        <span class="route-label purple-label">Para personas y familias</span>
+      <section class="reservas-final-note" aria-label="Nota importante">
+        <strong>Nota importante:</strong>
+        Este espacio no reemplaza atención médica, psiquiátrica ni servicios de urgencia.
+        En situaciones de riesgo inmediato o emergencia, corresponde acudir a los servicios
+        de salud o emergencia disponibles en tu territorio.
+      </section>
 
-        <h2>Renhacer<br>Consciente</h2>
+    </div>
+  </main>
 
-        <p>
-          Psicoterapia, bienestar emocional, terapias holísticas, programas guiados
-          y procesos de transformación personal.
-        </p>
+  <footer class="footer-simple">
+    <div class="reservas-shell">
+      <p>
+        © 2026 Renhacer Consciente · Parte de
+        <a href="index.html">Renhacer: Educación y Consciencia</a>
+      </p>
+    </div>
+  </footer>
 
-        <ul>
-          <li>Psicoterapia y acompañamiento emocional.</li>
-          <li>Terapias holísticas y autoconocimiento.</li>
-          <li>Cursos, programas y crecimiento personal.</li>
-        </ul>
-
-        <a href="consciente.html" class="route-button purple">
-          Conocer terapias y programas
-          <span>→</span>
-        </a>
-      </div>
-    </article>
-
-  </section>
-
-</main>
-
-<script>
-  window.addEventListener('load', function() {
-    document.body.classList.add('loaded');
-  });
-</script>
+  <script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("loaded");
+    });
+  </script>
 
 </body>
 </html>
