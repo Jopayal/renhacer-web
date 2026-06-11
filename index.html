@@ -27,7 +27,7 @@
 
     .site-header .brand {
       align-items: center !important;
-      gap: 17px !important;
+      gap: 16px !important;
     }
 
     .main-brand-logo {
@@ -39,30 +39,32 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      background:
-        radial-gradient(circle at 45% 35%, rgba(255,255,255,1), rgba(255,255,255,0.86));
-      border: 1px solid rgba(168, 86, 255, 0.16) !important;
+      background: #ffffff !important;
+      border: 1px solid rgba(168, 86, 255, 0.14) !important;
       box-shadow:
-        0 18px 36px rgba(30, 20, 60, 0.10),
+        0 16px 32px rgba(30, 20, 60, 0.11),
         0 6px 16px rgba(168, 86, 255, 0.10),
-        inset 0 0 0 1px rgba(255,255,255,0.80) !important;
+        inset 0 0 0 1px rgba(255,255,255,0.90) !important;
       overflow: hidden !important;
       flex: 0 0 82px !important;
+      position: relative !important;
     }
 
     .main-brand-logo img {
-      width: 112% !important;
-      height: 112% !important;
+      width: 94% !important;
+      height: 94% !important;
       max-width: none !important;
       max-height: none !important;
       object-fit: contain !important;
+      object-position: center !important;
       display: block !important;
       opacity: 1 !important;
       filter:
         saturate(1.12)
-        contrast(1.08)
-        drop-shadow(0 5px 8px rgba(30, 20, 60, 0.12)) !important;
-      transform: none !important;
+        contrast(1.06)
+        drop-shadow(0 4px 7px rgba(30, 20, 60, 0.12)) !important;
+      transform: translate(3px, 2px) !important;
+      transform-origin: center center !important;
       mix-blend-mode: normal !important;
     }
 
@@ -133,6 +135,12 @@
         flex-basis: 76px !important;
       }
 
+      .main-brand-logo img {
+        width: 94% !important;
+        height: 94% !important;
+        transform: translate(3px, 2px) !important;
+      }
+
       .site-header .brand-text strong {
         font-size: 25px !important;
       }
@@ -165,6 +173,12 @@
         min-width: 64px !important;
         min-height: 64px !important;
         flex-basis: 64px !important;
+      }
+
+      .main-brand-logo img {
+        width: 94% !important;
+        height: 94% !important;
+        transform: translate(2px, 1px) !important;
       }
 
       .site-header .brand-text strong {
@@ -200,6 +214,12 @@
         min-width: 56px !important;
         min-height: 56px !important;
         flex-basis: 56px !important;
+      }
+
+      .main-brand-logo img {
+        width: 94% !important;
+        height: 94% !important;
+        transform: translate(2px, 1px) !important;
       }
 
       .site-header .brand {
