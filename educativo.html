@@ -3,744 +3,694 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Renhacer Educativo - ATE | Convivencia Escolar</title>
-  <meta name="description" content="Asesoría técnica educativa (ATE) especializada en convivencia escolar, liderazgo directivo y gestión institucional. Soluciones que se sostienen." />
-  
-  <!-- Precargar recursos críticos -->
+
+  <title>Renhacer Educativo | Asesoría educativa especializada</title>
+
+  <meta
+    name="description"
+    content="Renhacer Educativo. Asesoría educativa especializada en convivencia escolar, reglamentos, protocolos, bienestar institucional, formación de equipos y gestión preventiva."
+  />
+
   <link rel="preload" href="assets/css/educativo.css" as="style" />
-  <link rel="preload" href="assets/images/re-logo.svg" as="image" />
+  <link rel="preload" href="assets/images/logo-renhacer-educativo.png" as="image" />
+
   <link rel="stylesheet" href="assets/css/educativo.css" />
-  
-  <!-- Prevenir FOUC -->
-  <style>body{opacity:0;transition:opacity .3s ease-in}body.loaded{opacity:1}</style>
+
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
 </head>
 
-<body>
+<body class="educativo-page">
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container-header">
-    <a href="index.html" class="logo-link">
-      <img src="assets/images/re-logo.svg" alt="Renhacer Educativo" class="logo-header">
+<header class="edu-header">
+  <div class="edu-header-inner">
+    <a href="index.html" class="edu-brand" aria-label="Ir al inicio de Renhacer">
+      <span class="edu-brand-logo">
+        <img src="assets/images/logo-renhacer-educativo.png" alt="Renhacer Educativo">
+      </span>
+
+      <span class="edu-brand-text">
+        <strong>Renhacer Educativo</strong>
+        <small>Área de Renhacer: Educación y Consciencia</small>
+      </span>
     </a>
-    <nav class="nav">
+
+    <nav class="edu-nav" aria-label="Navegación principal">
       <a href="#soluciones">Soluciones</a>
-      <a href="#servicios">Servicios ATE</a>
-      <a href="#equipo">Equipo</a>
-      <a href="#casos">Casos de Éxito</a>
-      <a href="#contacto" class="btn-contacto">Solicitar Asesoría</a>
-      <a href="index.html" class="btn-volver">← Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Método</a>
+      <a href="#direccion">Dirección</a>
+      <a href="#contacto" class="edu-nav-cta">Solicitar asesoría</a>
+      <a href="index.html" class="edu-nav-back">← Inicio</a>
     </nav>
-    <div class="menu-toggle">☰</div>
+
+    <button class="edu-menu-toggle" type="button" aria-label="Abrir menú">
+      ☰
+    </button>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero-educativo">
-  <div class="container">
-    <div class="hero-content">
-      <span class="hero-badge">ATE Especializada en Convivencia Escolar</span>
-      <h1>Orden, Criterios y Acciones que se Sostienen</h1>
-      <p class="hero-lead">
-        Transformamos la gestión de convivencia escolar en escuelas y sostenedores a través 
-        de asesoría técnica especializada, protocolos aplicables y formación práctica del equipo.
+<main>
+
+  <section class="edu-hero" aria-label="Presentación de Renhacer Educativo">
+    <div class="edu-hero-bg edu-hero-bg-one" aria-hidden="true"></div>
+    <div class="edu-hero-bg edu-hero-bg-two" aria-hidden="true"></div>
+
+    <div class="edu-shell edu-hero-grid">
+
+      <div class="edu-hero-copy">
+        <span class="edu-eyebrow">Asesoría educativa especializada</span>
+
+        <h1>Orden, criterios y acciones para comunidades educativas que necesitan avanzar.</h1>
+
+        <p class="edu-lead">
+          Acompañamos a establecimientos educacionales, sostenedores y equipos de convivencia
+          en la actualización de instrumentos, gestión preventiva, formación de equipos y
+          abordaje técnico de situaciones complejas.
+        </p>
+
+        <p class="edu-lead edu-lead-small">
+          Un enfoque práctico, contextualizado y aplicable para fortalecer la convivencia,
+          el bienestar institucional y la toma de decisiones con respaldo técnico.
+        </p>
+
+        <div class="edu-hero-actions">
+          <a href="#contacto" class="edu-btn-primary">Solicitar asesoría</a>
+          <a href="#servicios" class="edu-btn-secondary">Ver servicios educativos</a>
+        </div>
+
+        <div class="edu-trust-row">
+          <div class="edu-trust-pill">
+            <strong>Convivencia</strong>
+            <span>Prevención, abordaje y seguimiento.</span>
+          </div>
+
+          <div class="edu-trust-pill">
+            <strong>Normativa</strong>
+            <span>Reglamentos y protocolos aplicables.</span>
+          </div>
+
+          <div class="edu-trust-pill">
+            <strong>Formación</strong>
+            <span>Equipos con criterios compartidos.</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="edu-hero-card" aria-label="Resumen de soluciones educativas">
+        <div class="edu-hero-watermark" aria-hidden="true">
+          <img src="assets/images/logo-renhacer-educativo.png" alt="">
+        </div>
+
+        <span>Renhacer Educativo</span>
+
+        <h2>Convivencia, normativa y bienestar institucional.</h2>
+
+        <p>
+          Convertimos necesidades complejas en rutas claras de trabajo: diagnóstico,
+          priorización, instrumentos, formación y seguimiento.
+        </p>
+
+        <div class="edu-hero-mini-grid">
+          <div class="edu-mini-card">
+            <strong>RICE y protocolos</strong>
+            <span>Actualización clara, pertinente y aplicable.</span>
+          </div>
+
+          <div class="edu-mini-card">
+            <strong>Gestión de casos</strong>
+            <span>Criterios técnicos para actuar con orden.</span>
+          </div>
+
+          <div class="edu-mini-card">
+            <strong>Jornadas formativas</strong>
+            <span>Trabajo con estudiantes, familias y funcionarios.</span>
+          </div>
+
+          <div class="edu-mini-card">
+            <strong>Equipos de convivencia</strong>
+            <span>Acompañamiento práctico y sostenido.</span>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="edu-section edu-pain-section">
+    <div class="edu-shell">
+      <div class="edu-section-header">
+        <span class="edu-section-kicker">Desafíos frecuentes</span>
+
+        <h2>Cuando la convivencia se vuelve reactiva, la comunidad pierde claridad.</h2>
+
+        <p>
+          Muchos establecimientos tienen documentos, protocolos y planes, pero el problema
+          aparece cuando esos instrumentos no orientan decisiones reales frente a conflictos,
+          fiscalizaciones, crisis o demandas de la comunidad.
+        </p>
+      </div>
+
+      <div class="edu-pain-grid">
+        <article class="edu-pain-card">
+          <span>01</span>
+          <h3>Protocolos difíciles de aplicar.</h3>
+          <p>
+            Existen documentos, pero el equipo no siempre sabe qué hacer, cuándo actuar,
+            cómo registrar o cómo comunicar.
+          </p>
+        </article>
+
+        <article class="edu-pain-card">
+          <span>02</span>
+          <h3>Equipos sobrecargados.</h3>
+          <p>
+            La convivencia termina concentrada en pocas personas, con baja corresponsabilidad
+            institucional y escasa prevención.
+          </p>
+        </article>
+
+        <article class="edu-pain-card">
+          <span>03</span>
+          <h3>Conflictos que escalan.</h3>
+          <p>
+            Situaciones de violencia, redes sociales, consumo, familias o salud mental
+            avanzan sin una ruta compartida.
+          </p>
+        </article>
+
+        <article class="edu-pain-card">
+          <span>04</span>
+          <h3>Instrumentos desactualizados.</h3>
+          <p>
+            El reglamento, los protocolos o el plan de convivencia no siempre conversan
+            con la normativa, la realidad local o las prácticas del establecimiento.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-section edu-solutions-section" id="soluciones">
+    <div class="edu-shell">
+      <div class="edu-section-header">
+        <span class="edu-section-kicker">Soluciones</span>
+
+        <h2>Asesorías educativas especializadas para ordenar, implementar y sostener.</h2>
+
+        <p>
+          Trabajamos con una mirada técnica, preventiva y contextualizada. La meta no es solo
+          entregar documentos, sino dejar criterios, herramientas y prácticas que el equipo
+          pueda usar.
+        </p>
+      </div>
+
+      <div class="edu-solutions-grid">
+        <article class="edu-solution-card featured">
+          <span class="edu-service-tag">Convivencia educativa</span>
+
+          <h3>Gestión integral de convivencia.</h3>
+
+          <p>
+            Diagnóstico, planificación, seguimiento de casos, estrategias preventivas y
+            acompañamiento a equipos de convivencia.
+          </p>
+
+          <ul>
+            <li>Plan de Gestión de Convivencia Educativa.</li>
+            <li>Rutas de actuación y criterios comunes.</li>
+            <li>Prevención de violencia escolar y conflictos.</li>
+            <li>Trabajo con equipos, estudiantes y familias.</li>
+          </ul>
+
+          <a href="#contacto" class="edu-card-action">Solicitar orientación</a>
+        </article>
+
+        <article class="edu-solution-card">
+          <span class="edu-service-tag">Normativa interna</span>
+
+          <h3>RICE, protocolos e instrumentos.</h3>
+
+          <p>
+            Revisión y actualización de instrumentos institucionales con foco en claridad,
+            pertinencia y aplicabilidad.
+          </p>
+
+          <ul>
+            <li>Reglamento Interno de Convivencia Escolar.</li>
+            <li>Protocolos de actuación institucional.</li>
+            <li>Formatos de registro y seguimiento.</li>
+            <li>Socialización y capacitación para uso real.</li>
+          </ul>
+
+          <a href="#contacto" class="edu-card-action">Cotizar actualización</a>
+        </article>
+
+        <article class="edu-solution-card">
+          <span class="edu-service-tag">Formación aplicada</span>
+
+          <h3>Capacitaciones y jornadas.</h3>
+
+          <p>
+            Talleres prácticos para equipos directivos, docentes, asistentes, estudiantes,
+            familias y equipos de convivencia.
+          </p>
+
+          <ul>
+            <li>Manejo de conflictos y entrevistas difíciles.</li>
+            <li>Activación de protocolos y registros.</li>
+            <li>Buen trato, bienestar y corresponsabilidad.</li>
+            <li>Prevención de violencia, consumo y redes sociales.</li>
+          </ul>
+
+          <a href="#contacto" class="edu-card-action">Solicitar taller</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-section edu-services-section" id="servicios">
+    <div class="edu-shell">
+      <div class="edu-section-header">
+        <span class="edu-section-kicker">Servicios</span>
+
+        <h2>Formatos de trabajo según la necesidad de tu comunidad.</h2>
+
+        <p>
+          Podemos trabajar una necesidad puntual o diseñar un proceso más amplio de acompañamiento
+          institucional.
+        </p>
+      </div>
+
+      <div class="edu-packages-grid">
+        <article class="edu-package-card">
+          <div class="edu-package-number">01</div>
+
+          <h3>Diagnóstico y ruta de convivencia.</h3>
+
+          <p>
+            Levantamiento inicial para identificar brechas, priorizar necesidades y definir
+            una ruta de trabajo realista.
+          </p>
+
+          <div class="edu-package-meta">
+            <span>Diagnóstico</span>
+            <span>Informe</span>
+            <span>Plan de acción</span>
+          </div>
+        </article>
+
+        <article class="edu-package-card">
+          <div class="edu-package-number">02</div>
+
+          <h3>Actualización RICE y protocolos.</h3>
+
+          <p>
+            Revisión técnica de instrumentos, rediseño de protocolos, formatos de registro
+            y criterios de aplicación.
+          </p>
+
+          <div class="edu-package-meta">
+            <span>RICE</span>
+            <span>Protocolos</span>
+            <span>Capacitación</span>
+          </div>
+        </article>
+
+        <article class="edu-package-card">
+          <div class="edu-package-number">03</div>
+
+          <h3>Acompañamiento a equipos.</h3>
+
+          <p>
+            Apoyo técnico a encargados/as de convivencia, equipos directivos y profesionales
+            que gestionan casos.
+          </p>
+
+          <div class="edu-package-meta">
+            <span>Casos</span>
+            <span>Criterios</span>
+            <span>Seguimiento</span>
+          </div>
+        </article>
+
+        <article class="edu-package-card">
+          <div class="edu-package-number">04</div>
+
+          <h3>Jornadas institucionales.</h3>
+
+          <p>
+            Diseño y ejecución de jornadas para estudiantes, familias, docentes, asistentes
+            y comunidades educativas completas.
+          </p>
+
+          <div class="edu-package-meta">
+            <span>Talleres</span>
+            <span>Materiales</span>
+            <span>Evaluación</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-section edu-method-section" id="metodo">
+    <div class="edu-shell">
+      <div class="edu-method-band">
+        <div class="edu-method-copy">
+          <span class="edu-section-kicker light">Método Renhacer Educativo</span>
+
+          <h2>Diagnosticar, ordenar, implementar y sostener.</h2>
+
+          <p>
+            El trabajo se estructura para evitar intervenciones aisladas. Primero entendemos
+            el contexto, luego priorizamos, diseñamos herramientas aplicables y acompañamos
+            la implementación.
+          </p>
+        </div>
+
+        <div class="edu-method-steps">
+          <article>
+            <strong>1</strong>
+            <h3>Diagnosticar</h3>
+            <p>Revisamos instrumentos, prácticas, necesidades y focos críticos.</p>
+          </article>
+
+          <article>
+            <strong>2</strong>
+            <h3>Ordenar</h3>
+            <p>Definimos prioridades, responsables, rutas y criterios de actuación.</p>
+          </article>
+
+          <article>
+            <strong>3</strong>
+            <h3>Implementar</h3>
+            <p>Diseñamos herramientas, capacitamos y dejamos materiales aplicables.</p>
+          </article>
+
+          <article>
+            <strong>4</strong>
+            <h3>Sostener</h3>
+            <p>Acompañamos seguimiento, ajustes y mejora continua del proceso.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-section edu-difference-section">
+    <div class="edu-shell">
+      <div class="edu-section-header">
+        <span class="edu-section-kicker">Diferenciadores</span>
+
+        <h2>Una asesoría pensada para la realidad concreta de los establecimientos.</h2>
+
+        <p>
+          Renhacer Educativo combina criterio técnico, experiencia en convivencia escolar,
+          mirada socioemocional y herramientas listas para usar.
+        </p>
+      </div>
+
+      <div class="edu-difference-grid">
+        <article>
+          <h3>Experiencia territorial.</h3>
+          <p>
+            Trabajo directo con comunidades educativas, equipos de convivencia y gestión
+            institucional en contextos reales.
+          </p>
+        </article>
+
+        <article>
+          <h3>Lenguaje claro.</h3>
+          <p>
+            Instrumentos y capacitaciones comprensibles para equipos, no documentos que
+            quedan guardados en una carpeta.
+          </p>
+        </article>
+
+        <article>
+          <h3>Enfoque preventivo.</h3>
+          <p>
+            Priorizamos acciones formativas, corresponsabilidad, participación y buen trato.
+          </p>
+        </article>
+
+        <article>
+          <h3>Material aplicable.</h3>
+          <p>
+            Entregamos formatos, rutas, orientaciones y herramientas pensadas para el uso diario.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-section edu-direction-section" id="direccion">
+    <div class="edu-shell">
+      <div class="edu-direction-card">
+        <div class="edu-direction-logo" aria-hidden="true">
+          <img src="assets/images/logo-renhacer-educativo.png" alt="">
+        </div>
+
+        <div>
+          <span class="edu-section-kicker">Dirección profesional</span>
+
+          <h2>John Alvear · Psicólogo educativo y asesor en convivencia escolar.</h2>
+
+          <p>
+            Renhacer Educativo nace desde la experiencia en acompañamiento a establecimientos,
+            equipos de convivencia y comunidades educativas, integrando gestión institucional,
+            normativa interna, salud mental escolar, bienestar y formación socioemocional.
+          </p>
+
+          <p>
+            El foco es entregar orientación técnica con sentido práctico: ordenar criterios,
+            fortalecer equipos y construir soluciones que puedan sostenerse en la vida cotidiana
+            del establecimiento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-section edu-contact-section" id="contacto">
+    <div class="edu-shell">
+      <div class="edu-contact-layout">
+
+        <div class="edu-contact-info">
+          <span class="edu-section-kicker light">Contacto</span>
+
+          <h2>Conversemos sobre las necesidades de tu comunidad educativa.</h2>
+
+          <p>
+            Completa el formulario y recibirás una respuesta para coordinar una reunión inicial,
+            revisar el contexto de tu establecimiento y definir una propuesta de trabajo.
+          </p>
+
+          <div class="edu-contact-methods">
+            <div class="edu-contact-method">
+              <strong>Correo</strong>
+              <a href="mailto:contacto@renhacer.cl">contacto@renhacer.cl</a>
+            </div>
+
+            <div class="edu-contact-method">
+              <strong>Modalidad</strong>
+              <span>Online, presencial o híbrida según disponibilidad y territorio.</span>
+            </div>
+
+            <div class="edu-contact-method">
+              <strong>Proceso sugerido</strong>
+              <span>Formulario · Reunión diagnóstica · Propuesta personalizada.</span>
+            </div>
+          </div>
+
+          <div class="edu-contact-note">
+            <strong>Nota de transparencia.</strong>
+            <span>
+              Los servicios se presentan como asesoría educativa especializada. La comunicación
+              comercial puede ajustarse si corresponde a futuros procesos de registro o certificación.
+            </span>
+          </div>
+        </div>
+
+        <form class="edu-form" id="eduForm">
+          <h3>Solicitar asesoría educativa</h3>
+
+          <label>
+            Nombre y cargo *
+            <input type="text" name="nombreCargo" placeholder="Ej: Nombre, directora / encargado de convivencia" required>
+          </label>
+
+          <label>
+            Establecimiento o institución *
+            <input type="text" name="institucion" placeholder="Nombre del establecimiento, DAEM, SLEP o institución" required>
+          </label>
+
+          <label>
+            Comuna y región *
+            <input type="text" name="territorio" placeholder="Ej: Illapel, Región de Coquimbo" required>
+          </label>
+
+          <label>
+            Correo *
+            <input type="email" name="correo" placeholder="correo@institucion.cl" required>
+          </label>
+
+          <label>
+            Teléfono / WhatsApp
+            <input type="tel" name="telefono" placeholder="+56 9 XXXX XXXX">
+          </label>
+
+          <label>
+            Tipo de establecimiento *
+            <select name="tipo" required>
+              <option value="">Selecciona una opción</option>
+              <option>Municipal / DAEM</option>
+              <option>Servicio Local de Educación Pública</option>
+              <option>Particular subvencionado</option>
+              <option>Particular pagado</option>
+              <option>Jardín infantil / educación parvularia</option>
+              <option>Red de establecimientos</option>
+              <option>Otro</option>
+            </select>
+          </label>
+
+          <label>
+            Servicio de interés *
+            <select name="servicio" required>
+              <option value="">Selecciona una opción</option>
+              <option>Diagnóstico y ruta de convivencia</option>
+              <option>Actualización RICE y protocolos</option>
+              <option>Plan de Gestión de Convivencia Educativa</option>
+              <option>Capacitación o jornada formativa</option>
+              <option>Acompañamiento a equipo de convivencia</option>
+              <option>Asesoría integral</option>
+              <option>Otro</option>
+            </select>
+          </label>
+
+          <label>
+            Necesidad principal *
+            <textarea name="mensaje" rows="5" placeholder="Cuéntanos brevemente qué necesitan abordar..." required></textarea>
+          </label>
+
+          <label class="edu-checkbox">
+            <input type="checkbox" name="autorizacion" required>
+            <span>Acepto ser contactado/a por Renhacer Educativo para coordinar una reunión inicial.</span>
+          </label>
+
+          <button type="submit" class="edu-submit">Enviar solicitud</button>
+
+          <p class="edu-form-note">
+            Al enviar, se abrirá tu aplicación de correo con el mensaje preparado para contacto@renhacer.cl.
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="edu-footer">
+  <div class="edu-shell edu-footer-grid">
+    <div>
+      <img src="assets/images/logo-renhacer-educativo.png" alt="Renhacer Educativo" class="edu-footer-logo">
+      <p>
+        Renhacer Educativo. Asesoría educativa especializada para convivencia, normativa interna,
+        bienestar institucional y formación de equipos.
       </p>
-      <div class="hero-stats">
-        <div class="stat">
-          <strong>50+</strong>
-          <span>Establecimientos</span>
-        </div>
-        <div class="stat">
-          <strong>15+</strong>
-          <span>Años Experiencia</span>
-        </div>
-        <div class="stat">
-          <strong>100%</strong>
-          <span>Presencial y Online</span>
-        </div>
-      </div>
-      <div class="hero-buttons">
-        <a href="#contacto" class="btn-primary">Solicitar Asesoría</a>
-        <a href="#servicios" class="btn-secondary">Conocer Servicios</a>
-      </div>
     </div>
-    <div class="hero-visual">
-      <div class="visual-card">
-        <div class="visual-icon">🏫</div>
-        <h3>Convivencia Escolar</h3>
-        <p>Prevención y gestión efectiva</p>
-      </div>
-      <div class="visual-card">
-        <div class="visual-icon">👥</div>
-        <h3>Liderazgo Directivo</h3>
-        <p>Gestión institucional sólida</p>
-      </div>
-      <div class="visual-card">
-        <div class="visual-icon">📋</div>
-        <h3>Protocolos Aplicables</h3>
-        <p>PGCE y Reglamentos</p>
-      </div>
+
+    <div>
+      <h4>Servicios</h4>
+      <a href="#soluciones">Convivencia educativa</a>
+      <a href="#servicios">RICE y protocolos</a>
+      <a href="#servicios">Capacitaciones</a>
+      <a href="#metodo">Método de trabajo</a>
+    </div>
+
+    <div>
+      <h4>Renhacer</h4>
+      <a href="index.html">Marca principal</a>
+      <a href="consciente.html">Renhacer Consciente</a>
+      <a href="#contacto">Solicitar asesoría</a>
+      <a href="mailto:contacto@renhacer.cl">contacto@renhacer.cl</a>
     </div>
   </div>
-</section>
 
-<!-- PROBLEMAS QUE RESOLVEMOS -->
-<section class="problemas-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">¿Te identificas?</span>
-      <h2>Desafíos Comunes en Convivencia Escolar</h2>
-    </div>
-
-    <div class="problemas-grid">
-      <div class="problema-card">
-        <div class="problema-icon">⚠️</div>
-        <h3>Crisis y Conflictos Sin Protocolos Claros</h3>
-        <p>El equipo no sabe cómo actuar ante situaciones críticas. Los protocolos existen pero no se aplican.</p>
-      </div>
-
-      <div class="problema-card">
-        <div class="problema-icon">📚</div>
-        <h3>Documentos que No se Leen</h3>
-        <p>PGCE y Reglamento Interno obsoletos, extensos y desconectados de la realidad escolar.</p>
-      </div>
-
-      <div class="problema-card">
-        <div class="problema-icon">🔄</div>
-        <h3>Rotación de Encargados</h3>
-        <p>Cada nuevo encargado empieza de cero. No hay continuidad ni sistema sostenible.</p>
-      </div>
-
-      <div class="problema-card">
-        <div class="problema-icon">👨‍🏫</div>
-        <h3>Docentes Sin Herramientas</h3>
-        <p>Profesores agobiados sin estrategias concretas para gestionar el aula y los conflictos.</p>
-      </div>
-
-      <div class="problema-card">
-        <div class="problema-icon">⚖️</div>
-        <h3>Incumplimiento Normativo</h3>
-        <p>Observaciones de Superintendencia y riesgo de sanciones por documentación inadecuada.</p>
-      </div>
-
-      <div class="problema-card">
-        <div class="problema-icon">💬</div>
-        <h3>Desconexión con Apoderados</h3>
-        <p>Falta de estrategias efectivas para trabajar con familias en la resolución de conflictos.</p>
-      </div>
-    </div>
-
-    <div class="solucion-cta">
-      <h3>Nosotros te entregamos soluciones concretas, aplicables y sostenibles</h3>
-      <a href="#soluciones" class="btn-primary">Ver Nuestras Soluciones</a>
-    </div>
-  </div>
-</section>
-
-<!-- SOLUCIONES / SERVICIOS ATE -->
-<section id="soluciones" class="soluciones-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Nuestras Soluciones ATE</span>
-      <h2>Servicios Especializados</h2>
-      <p class="section-description">
-        Asesoría técnica educativa integral con foco en resultados medibles y sostenibles
-      </p>
-    </div>
-
-    <div class="soluciones-tabs">
-      <button class="tab-btn active" data-tab="convivencia">Convivencia Escolar</button>
-      <button class="tab-btn" data-tab="liderazgo">Liderazgo y Gestión</button>
-      <button class="tab-btn" data-tab="documentos">Documentos Técnicos</button>
-      <button class="tab-btn" data-tab="capacitacion">Capacitaciones</button>
-    </div>
-
-    <!-- TAB 1: CONVIVENCIA ESCOLAR -->
-    <div class="tab-content active" id="convivencia">
-      <div class="servicio-detalle">
-        <div class="servicio-info">
-          <h3>Gestión Integral de Convivencia Escolar</h3>
-          <p class="lead">Implementamos sistemas de prevención y gestión de conflictos que realmente funcionan en el día a día escolar.</p>
-          
-          <h4>¿Qué incluye?</h4>
-          <ul class="lista-beneficios">
-            <li>Diagnóstico inicial de convivencia (cuantitativo y cualitativo)</li>
-            <li>Plan anual de convivencia escolar operativo y medible</li>
-            <li>Diseño e implementación de protocolos de actuación</li>
-            <li>Sistema de registro y seguimiento de casos</li>
-            <li>Estrategias de prevención de bullying, violencia y drogas</li>
-            <li>Mediación escolar y resolución pacífica de conflictos</li>
-            <li>Acompañamiento mensual al equipo de convivencia</li>
-          </ul>
-
-          <div class="servicio-resultados">
-            <h4>Resultados esperados:</h4>
-            <div class="resultado-item">✓ Reducción de conflictos graves en 40%</div>
-            <div class="resultado-item">✓ Equipo capacitado y empoderado</div>
-            <div class="resultado-item">✓ Cumplimiento normativo al 100%</div>
-            <div class="resultado-item">✓ Clima escolar medible y mejorado</div>
-          </div>
-
-          <div class="servicio-modalidades">
-            <span class="modalidad">📍 Presencial</span>
-            <span class="modalidad">💻 Online</span>
-            <span class="modalidad">🔄 Híbrido</span>
-          </div>
-
-          <a href="#contacto" class="btn-servicio">Solicitar Cotización</a>
-        </div>
-
-        <div class="servicio-visual">
-          <div class="proceso-pasos">
-            <div class="paso">
-              <div class="paso-numero">1</div>
-              <h4>Diagnóstico</h4>
-              <p>Análisis profundo de la realidad actual</p>
-            </div>
-            <div class="paso">
-              <div class="paso-numero">2</div>
-              <h4>Diseño</h4>
-              <p>Plan personalizado y protocolos aplicables</p>
-            </div>
-            <div class="paso">
-              <div class="paso-numero">3</div>
-              <h4>Implementación</h4>
-              <p>Acompañamiento en terreno paso a paso</p>
-            </div>
-            <div class="paso">
-              <div class="paso-numero">4</div>
-              <h4>Seguimiento</h4>
-              <p>Monitoreo continuo y ajustes necesarios</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TAB 2: LIDERAZGO Y GESTIÓN -->
-    <div class="tab-content" id="liderazgo">
-      <div class="servicio-detalle">
-        <div class="servicio-info">
-          <h3>Fortalecimiento del Liderazgo y Gestión Institucional</h3>
-          <p class="lead">Potenciamos las capacidades directivas y de gestión para liderar establecimientos efectivos y sostenibles.</p>
-          
-          <h4>¿Qué incluye?</h4>
-          <ul class="lista-beneficios">
-            <li>Coaching ejecutivo para directores y sostenedores</li>
-            <li>Diseño de estructura organizacional efectiva</li>
-            <li>Implementación de sistemas de gestión escolar</li>
-            <li>Desarrollo de equipos directivos y de gestión</li>
-            <li>Planificación estratégica institucional (PEI, PME)</li>
-            <li>Gestión del cambio y cultura organizacional</li>
-            <li>Indicadores de gestión y tableros de control</li>
-          </ul>
-
-          <div class="servicio-duracion">
-            <strong>Duración:</strong> 6 a 12 meses | <strong>Modalidad:</strong> Presencial + Online
-          </div>
-
-          <a href="#contacto" class="btn-servicio">Solicitar Cotización</a>
-        </div>
-
-        <div class="servicio-visual">
-          <div class="testimonial-box">
-            <p>"Renhacer nos ayudó a estructurar nuestro equipo directivo y establecer procesos claros. Ahora funcionamos como un verdadero colegio profesional."</p>
-            <strong>— Director, Colegio Particular Subvencionado</strong>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TAB 3: DOCUMENTOS TÉCNICOS -->
-    <div class="tab-content" id="documentos">
-      <div class="servicio-detalle">
-        <div class="servicio-info">
-          <h3>Elaboración de Documentos Técnicos Normativos</h3>
-          <p class="lead">Documentos claros, aplicables y 100% ajustados a la normativa vigente.</p>
-          
-          <h4>Documentos que elaboramos:</h4>
-          <ul class="lista-beneficios">
-            <li><strong>Plan de Gestión de Convivencia Escolar (PGCE)</strong> - Operativo y medible</li>
-            <li><strong>Reglamento Interno (RI)</strong> - Claro, aplicable y ajustado a ley</li>
-            <li><strong>Protocolos de Actuación</strong> - Paso a paso para cada situación</li>
-            <li><strong>Plan de Seguridad Escolar (PISE)</strong> - Completo y actualizado</li>
-            <li><strong>Plan de Formación Ciudadana</strong> - Contextualizado</li>
-            <li><strong>Plan de Sexualidad, Afectividad y Género</strong> - Integral</li>
-            <li><strong>Reglamento de Evaluación</strong> - Según decreto vigente</li>
-          </ul>
-
-          <div class="doc-caracteristicas">
-            <div class="caracteristica">
-              <span class="icon">✓</span>
-              <strong>100% Ajustados a Normativa</strong>
-            </div>
-            <div class="caracteristica">
-              <span class="icon">✓</span>
-              <strong>Lenguaje Claro y Aplicable</strong>
-            </div>
-            <div class="caracteristica">
-              <span class="icon">✓</span>
-              <strong>Formato Editable</strong>
-            </div>
-            <div class="caracteristica">
-              <span class="icon">✓</span>
-              <strong>Capacitación Incluida</strong>
-            </div>
-          </div>
-
-          <div class="precio-box">
-            <p>Desde <strong>$450.000</strong> por documento completo</p>
-            <small>Descuento por paquete completo</small>
-          </div>
-
-          <a href="#contacto" class="btn-servicio">Cotizar Documentos</a>
-        </div>
-
-        <div class="servicio-visual">
-          <div class="documentos-list">
-            <div class="doc-item">
-              <span class="doc-icon">📋</span>
-              <div>
-                <strong>PGCE Completo</strong>
-                <small>Desde $550.000</small>
-              </div>
-            </div>
-            <div class="doc-item">
-              <span class="doc-icon">📜</span>
-              <div>
-                <strong>Reglamento Interno</strong>
-                <small>Desde $650.000</small>
-              </div>
-            </div>
-            <div class="doc-item">
-              <span class="doc-icon">🔐</span>
-              <div>
-                <strong>Pack 10 Protocolos</strong>
-                <small>Desde $450.000</small>
-              </div>
-            </div>
-            <div class="doc-item destacado">
-              <span class="doc-icon">💼</span>
-              <div>
-                <strong>Pack Completo</strong>
-                <small>Desde $1.800.000 (ahorra 30%)</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TAB 4: CAPACITACIONES -->
-    <div class="tab-content" id="capacitacion">
-      <div class="servicio-detalle full-width">
-        <h3>Capacitaciones y Talleres Prácticos</h3>
-        <p class="lead">Formación aplicada para equipos completos con herramientas concretas que se usan desde el día siguiente.</p>
-
-        <div class="capacitaciones-grid">
-          
-          <div class="capacitacion-card">
-            <div class="cap-header">
-              <h4>Protocolo de Actuación para Docentes</h4>
-              <span class="cap-duracion">8 horas presencial</span>
-            </div>
-            <p>Cómo actuar paso a paso ante conflictos en aula, bullying, violencia y crisis emocionales.</p>
-            <div class="cap-dirigido">
-              <strong>Dirigido a:</strong> Docentes, asistentes, inspectores
-            </div>
-            <div class="cap-precio">$350.000 + IVA (hasta 40 participantes)</div>
-            <button class="btn-cap">Solicitar</button>
-          </div>
-
-          <div class="capacitacion-card">
-            <div class="cap-header">
-              <h4>Gestión de Convivencia para Encargados</h3>
-              <span class="cap-duracion">12 horas (2 jornadas)</span>
-            </div>
-            <p>Herramientas completas para gestionar convivencia: protocolos, mediación, registro y trabajo con familias.</p>
-            <div class="cap-dirigido">
-              <strong>Dirigido a:</strong> Encargados de convivencia, directivos
-            </div>
-            <div class="cap-precio">$550.000 + IVA</div>
-            <button class="btn-cap">Solicitar</button>
-          </div>
-
-          <div class="capacitacion-card destacada">
-            <span class="badge-destacado">Más solicitada</span>
-            <div class="cap-header">
-              <h4>Mediación Escolar y Resolución de Conflictos</h4>
-              <span class="cap-duracion">16 horas (4 sesiones)</span>
-            </div>
-            <p>Formación completa en técnicas de mediación escolar, comunicación no violenta y resolución colaborativa.</p>
-            <div class="cap-dirigido">
-              <strong>Dirigido a:</strong> Equipos de convivencia, profesores mediadores
-            </div>
-            <div class="cap-precio">$750.000 + IVA</div>
-            <button class="btn-cap">Solicitar</button>
-          </div>
-
-          <div class="capacitacion-card">
-            <div class="cap-header">
-              <h4>Liderazgo Directivo y Gestión Escolar</h4>
-              <span class="cap-duracion">20 horas (5 sesiones)</span>
-            </div>
-            <p>Desarrollo de competencias directivas: liderazgo pedagógico, gestión de equipos y toma de decisiones estratégicas.</p>
-            <div class="cap-dirigido">
-              <strong>Dirigido a:</strong> Directores, jefes UTP, sostenedores
-            </div>
-            <div class="cap-precio">$900.000 + IVA</div>
-            <button class="btn-cap">Solicitar</button>
-          </div>
-
-          <div class="capacitacion-card">
-            <div class="cap-header">
-              <h4>Trabajo con Apoderados Difíciles</h4>
-              <span class="cap-duracion">6 horas</span>
-            </div>
-            <p>Estrategias de comunicación efectiva, manejo de situaciones complejas y entrevistas con familias.</p>
-            <div class="cap-dirigido">
-              <strong>Dirigido a:</strong> Docentes, directivos, encargados
-            </div>
-            <div class="cap-precio">$280.000 + IVA</div>
-            <button class="btn-cap">Solicitar</button>
-          </div>
-
-          <div class="capacitacion-card">
-            <div class="cap-header">
-              <h4>Prevención del Bullying y Ciberbullying</h4>
-              <span class="cap-duracion">8 horas</span>
-            </div>
-            <p>Detección temprana, intervención efectiva y trabajo preventivo con estudiantes y familias.</p>
-            <div class="cap-dirigido">
-              <strong>Dirigido a:</strong> Equipos completos
-            </div>
-            <div class="cap-precio">$400.000 + IVA</div>
-            <button class="btn-cap">Solicitar</button>
-          </div>
-
-        </div>
-
-        <div class="cap-nota">
-          <p><strong>Nota:</strong> Todas las capacitaciones incluyen material digital, certificado de participación y seguimiento post-capacitación de 30 días.</p>
-          <p>Modalidad: Presencial (en tu establecimiento) u Online sincrónico.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- POR QUÉ ELEGIRNOS -->
-<section class="why-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Nuestra Diferencia</span>
-      <h2>¿Por Qué Elegir Renhacer Educativo?</h2>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon">🎯</div>
-        <h3>Soluciones que se Sostienen</h3>
-        <p>No solo entregamos documentos. Implementamos sistemas que funcionan en el tiempo, aunque cambien las personas.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">👥</div>
-        <h3>Experiencia Real en Terreno</h3>
-        <p>Más de 15 años trabajando en escuelas. Conocemos la realidad del aula, no solo la teoría.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">📊</div>
-        <h3>Enfoque en Resultados Medibles</h3>
-        <p>Establecemos indicadores claros y medimos el impacto de cada intervención.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">🤝</div>
-        <h3>Acompañamiento Continuo</h3>
-        <p>No desaparecemos después de la asesoría. Seguimiento y apoyo durante todo el proceso.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">⚖️</div>
-        <h3>100% Ajustado a Normativa</h3>
-        <p>Conocimiento profundo de la legislación educativa vigente y actualizaciones permanentes.</p>
-      </div>
-
-      <div class="why-card">
-        <div class="why-icon">💡</div>
-        <h3>Herramientas Prácticas</h3>
-        <p>Todo lo que entregamos se puede aplicar inmediatamente. Nada de teoría sin acción.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CASOS DE ÉXITO -->
-<section id="casos" class="casos-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Resultados Reales</span>
-      <h2>Casos de Éxito</h2>
-    </div>
-
-    <div class="casos-grid">
-      
-      <div class="caso-card">
-        <div class="caso-tipo">Colegio Particular Subvencionado</div>
-        <h3>Reducción de Conflictos Graves en 60%</h3>
-        <p><strong>Desafío:</strong> Establecimiento con altos índices de violencia escolar, protocolos desactualizados y equipo de convivencia sin herramientas.</p>
-        <p><strong>Solución:</strong> Implementamos sistema completo de gestión de convivencia, capacitamos al equipo y actualizamos todos los documentos.</p>
-        <div class="caso-resultados">
-          <div class="resultado">✓ 60% menos conflictos graves</div>
-          <div class="resultado">✓ 100% de cumplimiento normativo</div>
-          <div class="resultado">✓ Equipo empoderado y autónomo</div>
-        </div>
-        <span class="caso-tiempo">Implementación: 8 meses</span>
-      </div>
-
-      <div class="caso-card">
-        <div class="caso-tipo">Red de Colegios</div>
-        <h3>Estandarización de 12 Establecimientos</h3>
-        <p><strong>Desafío:</strong> Sostenedor con 12 colegios sin protocolos unificados, cada uno funcionando de manera distinta.</p>
-        <p><strong>Solución:</strong> Diseñamos sistema corporativo de convivencia escolar aplicable a todos los establecimientos con adaptaciones locales.</p>
-        <div class="caso-resultados">
-          <div class="resultado">✓ Protocolos unificados</div>
-          <div class="resultado">✓ Capacitación a 180 docentes</div>
-          <div class="resultado">✓ Sistema de registro centralizado</div>
-        </div>
-        <span class="caso-tiempo">Implementación: 12 meses</span>
-      </div>
-
-      <div class="caso-card">
-        <div class="caso-tipo">Establecimiento Municipal</div>
-        <h3>De Observaciones a Reconocimiento</h3>
-        <p><strong>Desafío:</strong> Colegio con múltiples observaciones de Superintendencia por documentación deficiente y falta de protocolos aplicados.</p>
-        <p><strong>Solución:</strong> Rediseño completo de PGCE y RI, implementación de protocolos y capacitación intensiva al equipo.</p>
-        <div class="caso-resultados">
-          <div class="resultado">✓ Cero observaciones en siguiente fiscalización</div>
-          <div class="resultado">✓ Reconocimiento SLEP por mejora</div>
-          <div class="resultado">✓ Clima escolar mejorado</div>
-        </div>
-        <span class="caso-tiempo">Implementación: 6 meses</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- EQUIPO -->
-<section id="equipo" class="equipo-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Nuestro Equipo</span>
-      <h2>Profesionales Especializados</h2>
-      <p class="section-description">Equipo multidisciplinario con experiencia directa en gestión educativa</p>
-    </div>
-
-    <div class="equipo-grid">
-      
-      <div class="miembro-card">
-        <div class="miembro-foto">
-          <div class="foto-placeholder">👤</div>
-        </div>
-        <h3>Nombre Profesional</h3>
-        <p class="cargo">Director de Asesorías ATE</p>
-        <p class="bio">Psicólogo educacional, 15+ años como director y encargado de convivencia en establecimientos municipales y particulares.</p>
-        <div class="especialidades">
-          <span>Convivencia Escolar</span>
-          <span>Liderazgo</span>
-        </div>
-      </div>
-
-      <div class="miembro-card">
-        <div class="miembro-foto">
-          <div class="foto-placeholder">👤</div>
-        </div>
-        <h3>Nombre Profesional</h3>
-        <p class="cargo">Especialista en Normativa</p>
-        <p class="bio">Abogado educacional, experto en legislación escolar y elaboración de documentos técnicos normativos.</p>
-        <div class="especialidades">
-          <span>Normativa</span>
-          <span>PGCE</span>
-        </div>
-      </div>
-
-      <div class="miembro-card">
-        <div class="miembro-foto">
-          <div class="foto-placeholder">👤</div>
-        </div>
-        <h3>Nombre Profesional</h3>
-        <p class="cargo">Consultora en Gestión</p>
-        <p class="bio">Profesora, magíster en gestión educacional. Especialista en PME, PEI y planificación estratégica institucional.</p>
-        <div class="especialidades">
-          <span>Gestión</span>
-          <span>Planificación</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACTO / COTIZACIÓN -->
-<section id="contacto" class="contacto-educativo">
-  <div class="container">
-    <div class="contacto-layout">
-      
-      <div class="contacto-info">
-        <h2>Solicita una Asesoría Personalizada</h2>
-        <p>Conversemos sobre los desafíos específicos de tu establecimiento y cómo podemos ayudarte.</p>
-
-        <div class="contacto-metodos">
-          <div class="metodo">
-            <span class="icon">📧</span>
-            <div>
-              <strong>Email</strong>
-              <a href="mailto:contacto@renhacereducativo.cl">contacto@renhacereducativo.cl</a>
-            </div>
-          </div>
-
-          <div class="metodo">
-            <span class="icon">📱</span>
-            <div>
-              <strong>WhatsApp</strong>
-              <a href="https://wa.me/56912345678">+56 9 1234 5678</a>
-            </div>
-          </div>
-
-          <div class="metodo">
-            <span class="icon">📍</span>
-            <div>
-              <strong>Ubicación</strong>
-              <span>Santiago, Región Metropolitana<br>Atención en todo Chile</span>
-            </div>
-          </div>
-
-          <div class="metodo">
-            <span class="icon">🕐</span>
-            <div>
-              <strong>Horario</strong>
-              <span>Lunes a Viernes: 9:00 - 18:00</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proceso-cotizacion">
-          <h4>Proceso de Cotización:</h4>
-          <div class="paso-cotiza">1️⃣ Completa el formulario</div>
-          <div class="paso-cotiza">2️⃣ Te contactamos en 24 hrs</div>
-          <div class="paso-cotiza">3️⃣ Reunión diagnóstica (sin costo)</div>
-          <div class="paso-cotiza">4️⃣ Propuesta personalizada</div>
-        </div>
-      </div>
-
-      <form class="form-cotizacion">
-        <h3>Solicitar Cotización</h3>
-        
-        <input type="text" placeholder="Nombre completo *" required>
-        <input type="email" placeholder="Email institucional *" required>
-        <input type="tel" placeholder="Teléfono *" required>
-        
-        <input type="text" placeholder="Establecimiento / Institución *" required>
-        <input type="text" placeholder="Cargo *" required>
-        
-        <select required>
-          <option value="">Tipo de establecimiento *</option>
-          <option>Municipal / SLEP</option>
-          <option>Particular Subvencionado</option>
-          <option>Particular Pagado</option>
-          <option>Corporación / Red de Colegios</option>
-          <option>Sostenedor</option>
-        </select>
-
-        <select required>
-          <option value="">Servicio de interés *</option>
-          <option>Gestión de Convivencia Escolar</option>
-          <option>Liderazgo y Gestión Institucional</option>
-          <option>Elaboración de Documentos (PGCE, RI, Protocolos)</option>
-          <option>Capacitaciones para Equipos</option>
-          <option>Asesoría Integral (varios servicios)</option>
-          <option>Otro (especificar en mensaje)</option>
-        </select>
-
-        <textarea placeholder="Cuéntanos tu desafío o necesidad específica..." rows="5" required></textarea>
-
-        <label class="checkbox-label">
-          <input type="checkbox" required>
-          <span>Acepto que Renhacer Educativo me contacte para coordinar reunión diagnóstica</span>
-        </label>
-
-        <button type="submit" class="btn-enviar">Enviar Solicitud</button>
-        
-        <p class="form-nota">* Respuesta en menos de 24 horas hábiles</p>
-      </form>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer-educativo">
-  <div class="container">
-    <div class="footer-content">
-      
-      <div class="footer-col">
-        <img src="assets/images/re-logo.svg" alt="Renhacer Educativo" class="footer-logo">
-        <p>ATE especializada en convivencia escolar, liderazgo y gestión institucional. Soluciones que se sostienen.</p>
-        <div class="footer-social">
-          <a href="#">📷 Instagram</a>
-          <a href="#">📘 Facebook</a>
-          <a href="#">💼 LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Servicios ATE</h4>
-        <a href="#soluciones">Convivencia Escolar</a>
-        <a href="#soluciones">Liderazgo y Gestión</a>
-        <a href="#soluciones">Documentos Técnicos</a>
-        <a href="#soluciones">Capacitaciones</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Recursos</h4>
-        <a href="#">Blog Educativo</a>
-        <a href="#">Casos de Éxito</a>
-        <a href="#">Documentos de Apoyo</a>
-        <a href="#">Normativa Actualizada</a>
-      </div>
-
-      <div class="footer-col">
-        <h4>Contacto</h4>
-        <p>📧 contacto@renhacereducativo.cl</p>
-        <p>📱 +56 9 1234 5678</p>
-        <p>📍 Santiago, Chile</p>
-        <a href="#contacto" class="footer-cta">Solicitar Asesoría →</a>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2024 Renhacer Educativo - Todos los derechos reservados</p>
-      <div class="footer-links">
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Términos y Condiciones</a>
-        <a href="index.html">Renhacer Principal</a>
-        <a href="consciente.html">Renhacer Consciente</a>
-      </div>
-    </div>
+  <div class="edu-footer-bottom">
+    © 2026 Renhacer Educativo · Parte de Renhacer: Educación y Consciencia.
   </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/56912345678" class="whatsapp-float" target="_blank">
-  <span>💬</span>
-</a>
+<script>
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
 
-<script src="assets/js/educativo.js"></script>
-<script>window.addEventListener('load',function(){document.body.classList.add('loaded');});</script>
+  const menuButton = document.querySelector(".edu-menu-toggle");
+  const nav = document.querySelector(".edu-nav");
+
+  if (menuButton && nav) {
+    menuButton.addEventListener("click", function () {
+      nav.classList.toggle("is-open");
+    });
+  }
+
+  const form = document.getElementById("eduForm");
+
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const data = new FormData(form);
+
+      const subject = "Solicitud de asesoría educativa - Renhacer Educativo";
+
+      const body = [
+        "Hola Renhacer Educativo,",
+        "",
+        "Quisiera solicitar una asesoría educativa.",
+        "",
+        "Nombre y cargo: " + (data.get("nombreCargo") || ""),
+        "Establecimiento / institución: " + (data.get("institucion") || ""),
+        "Comuna y región: " + (data.get("territorio") || ""),
+        "Correo: " + (data.get("correo") || ""),
+        "Teléfono / WhatsApp: " + (data.get("telefono") || ""),
+        "Tipo de establecimiento: " + (data.get("tipo") || ""),
+        "Servicio de interés: " + (data.get("servicio") || ""),
+        "",
+        "Necesidad principal:",
+        data.get("mensaje") || "",
+        "",
+        "Acepto ser contactado/a para coordinar una reunión inicial.",
+        "",
+        "Mensaje enviado desde el formulario de renhacer.cl/educativo"
+      ].join("\n");
+
+      const mailto =
+        "mailto:contacto@renhacer.cl" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailto;
+    });
+  }
+</script>
+
 </body>
 </html>
