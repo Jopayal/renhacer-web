@@ -10,12 +10,62 @@
 
   <link rel="preload" href="assets/css/styles.css" as="style" />
   <link rel="preload" href="assets/images/rec-logo.svg" as="image" />
+  <link rel="preload" href="assets/images/logo-renhacer-educativo.png" as="image" />
+  <link rel="preload" href="assets/images/logo-renhacer-consciente.png" as="image" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <style>
-    body { opacity: 0; transition: opacity 0.3s ease-in; }
-    body.loaded { opacity: 1; }
+    body {
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+
+    .visual-logo {
+      width: 92px;
+      height: 92px;
+      padding: 7px;
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      box-shadow:
+        inset 0 0 24px rgba(255, 255, 255, 0.08),
+        0 14px 28px rgba(30, 20, 60, 0.12);
+      overflow: hidden;
+    }
+
+    .visual-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.16));
+    }
+
+    @media (max-width: 820px) {
+      .visual-logo {
+        width: 82px;
+        height: 82px;
+        border-radius: 23px;
+        padding: 6px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .visual-logo {
+        width: 76px;
+        height: 76px;
+        border-radius: 21px;
+      }
+    }
   </style>
 </head>
 
@@ -66,7 +116,10 @@
 
     <article class="route-card educativo-card">
       <div class="visual-panel visual-educativo">
-        <div class="visual-mark">RE</div>
+        <div class="visual-logo" aria-hidden="true">
+          <img src="assets/images/logo-renhacer-educativo.png" alt="">
+        </div>
+
         <p>Área educativa e institucional</p>
       </div>
 
@@ -95,7 +148,10 @@
 
     <article class="route-card consciente-card">
       <div class="visual-panel visual-consciente">
-        <div class="visual-mark">RC</div>
+        <div class="visual-logo" aria-hidden="true">
+          <img src="assets/images/logo-renhacer-consciente.png" alt="">
+        </div>
+
         <p>Área personal, familiar y terapéutica</p>
       </div>
 
