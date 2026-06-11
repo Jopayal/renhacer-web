@@ -25,47 +25,94 @@
       opacity: 1;
     }
 
-    .visual-logo {
-      width: 100px;
-      height: 100px;
-      padding: 10px;
-      border-radius: 28px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.90));
-      border: 1px solid rgba(255,255,255,0.82);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .visual-panel .route-area-logo {
+      width: 124px !important;
+      height: 124px !important;
+      min-width: 124px !important;
+      max-width: 124px !important;
+      min-height: 124px !important;
+      max-height: 124px !important;
+      aspect-ratio: 1 / 1 !important;
+      padding: 8px !important;
+      border-radius: 30px !important;
+      background: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.95) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex: 0 0 124px !important;
       box-shadow:
-        0 18px 34px rgba(30, 20, 60, 0.16),
-        inset 0 0 0 1px rgba(135, 55, 219, 0.08);
-      overflow: hidden;
+        0 18px 34px rgba(30, 20, 60, 0.20),
+        0 6px 14px rgba(30, 20, 60, 0.10),
+        inset 0 0 0 1px rgba(135, 55, 219, 0.08) !important;
+      overflow: hidden !important;
+      opacity: 1 !important;
+      transform: none !important;
     }
 
-    .visual-logo img {
-      width: 88%;
-      height: 88%;
-      object-fit: contain;
-      display: block;
-      opacity: 0.98;
-      filter: drop-shadow(0 6px 10px rgba(30, 20, 60, 0.16));
+    .visual-panel .route-area-logo img {
+      width: 112% !important;
+      height: 112% !important;
+      max-width: none !important;
+      max-height: none !important;
+      object-fit: contain !important;
+      display: block !important;
+      opacity: 1 !important;
+      filter:
+        saturate(1.12)
+        contrast(1.08)
+        drop-shadow(0 5px 8px rgba(30, 20, 60, 0.18)) !important;
+      mix-blend-mode: normal !important;
+      transform: none !important;
+    }
+
+    @media (max-width: 1180px) {
+      .visual-panel .route-area-logo {
+        width: 112px !important;
+        height: 112px !important;
+        min-width: 112px !important;
+        max-width: 112px !important;
+        min-height: 112px !important;
+        max-height: 112px !important;
+        flex-basis: 112px !important;
+        border-radius: 28px !important;
+      }
     }
 
     @media (max-width: 820px) {
-      .visual-logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 25px;
-        padding: 9px;
+      .visual-panel .route-area-logo {
+        width: 104px !important;
+        height: 104px !important;
+        min-width: 104px !important;
+        max-width: 104px !important;
+        min-height: 104px !important;
+        max-height: 104px !important;
+        flex-basis: 104px !important;
+        border-radius: 26px !important;
+      }
+
+      .visual-panel .route-area-logo img {
+        width: 114% !important;
+        height: 114% !important;
       }
     }
 
     @media (max-width: 520px) {
-      .visual-logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 22px;
-        padding: 8px;
+      .visual-panel .route-area-logo {
+        width: 96px !important;
+        height: 96px !important;
+        min-width: 96px !important;
+        max-width: 96px !important;
+        min-height: 96px !important;
+        max-height: 96px !important;
+        flex-basis: 96px !important;
+        border-radius: 24px !important;
+        padding: 7px !important;
+      }
+
+      .visual-panel .route-area-logo img {
+        width: 116% !important;
+        height: 116% !important;
       }
     }
   </style>
@@ -118,7 +165,7 @@
 
     <article class="route-card educativo-card">
       <div class="visual-panel visual-educativo">
-        <div class="visual-logo" aria-hidden="true">
+        <div class="route-area-logo" aria-hidden="true">
           <img src="assets/images/logo-renhacer-educativo.png" alt="">
         </div>
 
@@ -150,7 +197,7 @@
 
     <article class="route-card consciente-card">
       <div class="visual-panel visual-consciente">
-        <div class="visual-logo" aria-hidden="true">
+        <div class="route-area-logo" aria-hidden="true">
           <img src="assets/images/logo-renhacer-consciente.png" alt="">
         </div>
 
