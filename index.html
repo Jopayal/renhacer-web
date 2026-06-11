@@ -26,60 +26,49 @@
     }
 
     .visual-panel .route-area-logo {
-      width: 124px !important;
-      height: 124px !important;
-      min-width: 124px !important;
-      max-width: 124px !important;
-      min-height: 124px !important;
-      max-height: 124px !important;
+      width: 108px !important;
+      height: 108px !important;
+      min-width: 108px !important;
+      max-width: 108px !important;
+      min-height: 108px !important;
+      max-height: 108px !important;
       aspect-ratio: 1 / 1 !important;
       padding: 8px !important;
-      border-radius: 30px !important;
-      background: #ffffff !important;
-      border: 1px solid rgba(255, 255, 255, 0.95) !important;
+      border-radius: 28px !important;
+      background: rgba(255, 255, 255, 0.92) !important;
+      border: 1px solid rgba(255, 255, 255, 0.88) !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      flex: 0 0 124px !important;
+      flex: 0 0 108px !important;
       box-shadow:
-        0 18px 34px rgba(30, 20, 60, 0.20),
-        0 6px 14px rgba(30, 20, 60, 0.10),
-        inset 0 0 0 1px rgba(135, 55, 219, 0.08) !important;
+        0 16px 30px rgba(30, 20, 60, 0.16),
+        0 6px 14px rgba(30, 20, 60, 0.08),
+        inset 0 0 0 1px rgba(135, 55, 219, 0.07) !important;
       overflow: hidden !important;
       opacity: 1 !important;
       transform: none !important;
+      backdrop-filter: blur(4px) !important;
+      -webkit-backdrop-filter: blur(4px) !important;
     }
 
     .visual-panel .route-area-logo img {
-      width: 112% !important;
-      height: 112% !important;
+      width: 108% !important;
+      height: 108% !important;
       max-width: none !important;
       max-height: none !important;
       object-fit: contain !important;
       display: block !important;
       opacity: 1 !important;
       filter:
-        saturate(1.12)
-        contrast(1.08)
-        drop-shadow(0 5px 8px rgba(30, 20, 60, 0.18)) !important;
+        saturate(1.08)
+        contrast(1.04)
+        drop-shadow(0 4px 7px rgba(30, 20, 60, 0.16)) !important;
       mix-blend-mode: normal !important;
       transform: none !important;
     }
 
     @media (max-width: 1180px) {
-      .visual-panel .route-area-logo {
-        width: 112px !important;
-        height: 112px !important;
-        min-width: 112px !important;
-        max-width: 112px !important;
-        min-height: 112px !important;
-        max-height: 112px !important;
-        flex-basis: 112px !important;
-        border-radius: 28px !important;
-      }
-    }
-
-    @media (max-width: 820px) {
       .visual-panel .route-area-logo {
         width: 104px !important;
         height: 104px !important;
@@ -88,16 +77,16 @@
         min-height: 104px !important;
         max-height: 104px !important;
         flex-basis: 104px !important;
-        border-radius: 26px !important;
+        border-radius: 27px !important;
       }
 
       .visual-panel .route-area-logo img {
-        width: 114% !important;
-        height: 114% !important;
+        width: 108% !important;
+        height: 108% !important;
       }
     }
 
-    @media (max-width: 520px) {
+    @media (max-width: 820px) {
       .visual-panel .route-area-logo {
         width: 96px !important;
         height: 96px !important;
@@ -106,13 +95,32 @@
         min-height: 96px !important;
         max-height: 96px !important;
         flex-basis: 96px !important;
-        border-radius: 24px !important;
+        border-radius: 25px !important;
         padding: 7px !important;
       }
 
       .visual-panel .route-area-logo img {
-        width: 116% !important;
-        height: 116% !important;
+        width: 110% !important;
+        height: 110% !important;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .visual-panel .route-area-logo {
+        width: 88px !important;
+        height: 88px !important;
+        min-width: 88px !important;
+        max-width: 88px !important;
+        min-height: 88px !important;
+        max-height: 88px !important;
+        flex-basis: 88px !important;
+        border-radius: 23px !important;
+        padding: 7px !important;
+      }
+
+      .visual-panel .route-area-logo img {
+        width: 112% !important;
+        height: 112% !important;
       }
     }
   </style>
